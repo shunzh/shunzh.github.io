@@ -1,6 +1,6 @@
 ---
-title: 'Best Locus of Knowledge in Transfer Learning'
-permalink: /posts/2020/02/locus
+title: Best Locus of Knowledge in Transfer Learning
+author: Shun Zhang
 ---
 
 What is the best knoweldge to transfer? Should we transfer reward functions, options, or policies?
