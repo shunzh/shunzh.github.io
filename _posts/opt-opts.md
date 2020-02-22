@@ -3,21 +3,21 @@ title: Optimal Option Discovery
 author: Shun Zhang
 ---
 We know that options can be helpful for learning and planning.
-Although we could choose domain-specific options for the agent to use (which haven been successful), 
-there are growing interests of making the agent discover useful options itself
+Although we could design domain-specific options,
+there are growing interests of making the agent discover useful options 
 [@bacon_option-critic_2016;@bagaria_option_2019].
 
-Most of the prior work find options using meta-gradient updates. That is, we write down the learning objective as a function of options parameters.
-During learning, the agent not only improves its policy, but also update its options so that the updated options would be helpful for future learning.
+Most of the prior work finds options using meta-gradient methods. That is, we formulate the learning objective as a function of option parameters.
+During learning, the agent not only improves its policy, but also updates its options so that the updated options would be helpful for future learning.
 However, gradient-based methods can hardly provide optimality guarantees.
 We're interested in a different question: How do we find a **provably** optimal or nearly-optimal set of options that are useful for learning?
 
 Let's consider an example. In the following figure, suppose the circles indicate states with possible positive rewards.
 States outside of these clusters have no rewards.
 If the agent can add three options, it may want to add $$o_1, o_2, o_3$$ to the MDP so that it can transit between states of possible rewards in the test phase.
-There is no exploration needed when it is following any of the options.
+There is no exploration needed in the process of following any of the options.
 
-![Example on options useful for learning](/images/learned_options.svg){ width=300px }
+![Example on options useful for learning](/images/learned_options.svg){ width=300 }\
 
 This is not a completely new problem.
 [@jinnai_finding_2019] considered a similar problem of finding optimal options for planning in a tabular world.
