@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 <p>This page is to bookkeep some research ideas.
+They may be half-baked and not very carefully scrutinized.
 </p>
 
 {% include base_path %}
