@@ -13,4 +13,3 @@ I am a Ph.D. candidate in the Artificial Intelligence Lab at the University of M
 
 I expect to graduate in Summer 2020 and am looking for full-time opportunities in industry.
 
-_I expect to use this new homepage after graduation. It's currently under construction._
