@@ -21,13 +21,13 @@ There is no exploration needed in the process of following any of the options.
 
 This is not a completely new problem.
 [@jinnai_finding_2019] considered a similar problem of finding optimal options for planning in a tabular world.
-They considered a very specific setting: what options to add to an MDP so that value iteration converges in the least numebr of steps
+They considered a very specific setting: what options to add to an MDP so that value iteration converges in the least number of steps
 (and the counterpart to this question, to make value iteration converges within a given number of steps, what is the minimum number of options that need to be added).
 Here, we are interested in the _learning_ setting and in a _continuous_ state space.
 
 Our hope is that we can iteratively greedily select options to add to an existing set of options.
 This is a common way to approach a combinatorial optimization problem [@zhang_approximately-optimal_2017;@viappiani_optimal_2010].
-However, the objective is not [submodular](https://en.wikipedia.org/wiki/Submodular_set_function) so we may not have an optimality guanrantee.
+However, the objective is not [submodular](https://en.wikipedia.org/wiki/Submodular_set_function) so we may not have an optimality guarantee.
 One hope is that we may have a submodular objective if we consider a _satisfiability_ problem,
 that is, how to add options so that the value of the learned policy is above a threshold.
 
