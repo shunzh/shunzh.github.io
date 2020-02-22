@@ -29,6 +29,6 @@ Our hope is that we can iteratively greedily select options to add to an existin
 This is a common way to approach a combinatorial optimization problem [@zhang_approximately-optimal_2017;@viappiani_optimal_2010].
 However, the objective is not [submodular](https://en.wikipedia.org/wiki/Submodular_set_function) so we may not have an optimality guanrantee.
 One hope is that we may have a submodular objective if we consider a _satisfiability_ problem,
-that is, how to add options that the value of the learned policy is above a threshold.
+that is, how to add options so that the value of the learned policy is above a threshold.
 
 ## References
