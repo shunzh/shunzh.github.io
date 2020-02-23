@@ -15,7 +15,7 @@ We're interested in a different question: How do we find a **provably** optimal 
 (Indeed, we cannot even find provably optimal policies in large domains. But here we only focus on the option discovery problem.)
 
 Additionally, let's consider this problem in a meta-RL setting [@finn_model-agnostic_2017].
-The motivation is certainly not that meta-RL is a hot topic recently.
+The motivation is certainly not that meta-RL is recently a hot topic.
 It is because that, as observed in [@jinnai_finding_2019], finding a set of optimal options (and proving that they are indeed the optimal ones) can be more computationally expensive than finding the optimal policy. 
 Why do we care about finding the optimal set of options if we can already find the optimal policy?
 So we consider a meta-RL setting.
