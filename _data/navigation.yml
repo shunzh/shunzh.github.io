@@ -5,6 +5,9 @@ main:
 
   - title: "Open Thoughts"
     url: /thoughts/
+
+  - title: "Resource"
+    url: /resources/
     
   - title: "CV"
     url: /cv/
