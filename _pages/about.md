@@ -12,5 +12,4 @@ _This is my new homepage that I plan to use after graduation. It's currently und
 
 I am a Ph.D. candidate in the Artificial Intelligence Lab at the University of Michigan. I'm working on value alignment and AI safety in reinforcement learning with Prof. Satinder Singh and Prof. Ed Durfee. 
 
-I expect to graduate in Summer 2020 and am looking for full-time opportunities in industry.
 
