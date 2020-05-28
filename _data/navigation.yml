@@ -3,8 +3,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Open Thoughts"
-    url: /thoughts/
+  - title: "Posts"
+    url: /year-archive/
 
   - title: "CV"
     url: /cv/

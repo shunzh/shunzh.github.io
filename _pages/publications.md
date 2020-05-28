@@ -12,6 +12,7 @@ author_profile: true
   * An earlier version appeared as an extended abstract in Autonomous Agents and Multiagent Systems (AAMAS), 2018.
 * **Shun Zhang**, Edmund H. Durfee, and Satinder Singh. Approximately-Optimal Queries for Planning in Reward-Uncertain Markov Decision Processes. International Conference on Automated Planning and Scheduling (ICAPS), 2017.
 [paper](/files/shun-icaps-2017.pdf)
+  * An earlier version appeared in Multi-disciplinary Conference on Reinforcement Learning and Decision Making (RLDM), 2017.
 * Ruohan Zhang, **Shun Zhang**, Matthew Tong, Mary Hayhoe, and Dana Ballard. Modeling Sensorimotor Behavior through Modular Inverse Reinforcement Learning with Discount Factors. Journal of Vision, 2017.
 * Katie Genter, **Shun Zhang**, and Peter Stone. Determining Placements of Influencing Agents in a Flock. Autonomous Agents and Multiagent Systems (AAMAS), 2015.
 * Tsz-Chiu Au, **Shun Zhang**, and Peter Stone. Autonomous Intersection Management for Semi-Autonomous Vehicles. Handbook of Transportation, 2015.

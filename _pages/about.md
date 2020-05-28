@@ -7,9 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜).
-_This is my new homepage that I plan to use after graduation. It's currently under construction._
+Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!
+**I will join IBM as a postdoctoral researcher in summer 2020** (base in Ann Arbor).
 
-I am a Ph.D. candidate in the Artificial Intelligence Lab at the University of Michigan. I'm working on value alignment and AI safety in reinforcement learning with Prof. Satinder Singh and Prof. Ed Durfee. 
-
+My research interests lie in reinforcement learning, learning/planning under uncertainty, meta-reinforcement learning, and artificial general intelligence (AGI).
+I received my Ph.D. at the University of Michigan,
+advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof. [Ed Durfee](http://ai.eecs.umich.edu/people/durfee/). 
+My thesis is on _Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety_.
+I received my BS and MS in computer science at the University of Texas at Austin.
 
