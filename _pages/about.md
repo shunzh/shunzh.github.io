@@ -20,19 +20,19 @@ I received BS and MS in computer science at the University of Texas at Austin.
 ## Featured Work
 
 **Querying to Find a Safe Policy Under Uncertain Safety Constraints in Markov Decision Processes** <br>
-In AAAI 2020. Join work with Edmund H. Durfee and Satinder Singh. <br>
+In AAAI 2020. Joint work with Edmund H. Durfee and Satinder Singh. <br>
 [paper](/files/shun-aaai-2020.pdf)
 
 If the robot does not know any policy that guarantees to not negatively surprise the user, how should it query the user to gain more information about her preferences to find such a policy? We identify a set-cover structure in the problem and design a greedy query selection algorithm.
 
-![AAAI-20](images/aaai-20.png){:width="400px"}
+![AAAI-20](images/aaai-20.png){:width="350px"}
 
 ---
 **Approximately-Optimal Queries for Planning in Reward-Uncertain Markov Decision Processes** <br>
-In ICAPS 2017. Join work with Edmund H. Durfee and Satinder Singh. <br>
+In ICAPS 2017. Joint work with Edmund H. Durfee and Satinder Singh. <br>
 [paper](/files/shun-icaps-2017.pdf)
 
 When a robot serves a human user and is uncertain about the human's preference (the reward function), what's the best question (given a fixed budget) to ask to improve its policy?
 
-![ICAPS-17](images/icaps-17.png){:width="400px"}
+![ICAPS-17](images/icaps-17.png){:width="350px"}
 
