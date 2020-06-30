@@ -23,7 +23,7 @@ I received BS and MS in computer science at the University of Texas at Austin.
 In AAAI 2020. Joint work with Edmund H. Durfee and Satinder Singh. <br>
 [paper](/files/shun-aaai-2020.pdf)
 
-If the robot does not know any policy that guarantees to not negatively surprise the user, how should it query the user to gain more information about her preferences to find such a policy? We identify a set-cover structure in the problem and design a greedy query selection algorithm.
+When a human user specifies a goal for a robot to achieve, the robot may find its policy cause side effects that the user may think unsafe. How should the robot efficiently query the human to find a guaranteed-safe policy (if one exists)?
 
 ![AAAI-20](images/aaai-20.png){:width="350px"}
 
