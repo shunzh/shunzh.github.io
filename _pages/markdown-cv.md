@@ -57,10 +57,8 @@ Reinforcement learning; planning under uncertainty; learning with human-in-the-l
 
 ## Skills
 
-Reinforcement learning, machine learning, preference elicitation/active learning, planning, convex optimization, approximation algorithms.
-
-Programming languages:<br>
-Proficient in *Python* (used for research).<br>
-Comfortable with *Java, C++, C, Matlab, JavaScript* (used for research projects/courses before).
-    
-Natural languages: *Mandarin Chinese* (native), *English* (fluent).
+* Reinforcement learning, machine learning, preference elicitation/active learning, planning, convex optimization, approximation algorithms.
+* Programming languages:
+  * Proficient in *Python* (used for research).<br>
+  * Comfortable with *Java, C++, C, Matlab, JavaScript* (used for research projects/courses before).
+* Natural languages: *Mandarin Chinese* (native), *English* (fluent).
