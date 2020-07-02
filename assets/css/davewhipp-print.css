@@ -84,7 +84,7 @@ p code {
 
 ul {
 	position: relative;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.2em;
 	/*margin-top: -0.5em;*/
 }
 
@@ -140,7 +140,6 @@ h2 {
 h3 {
 	font-size: 1em;
 	line-height: 2em;
-	color: #ccc;
 }
 
 a {
