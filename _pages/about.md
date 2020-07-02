@@ -38,4 +38,4 @@ We contribute a query selection algorithm that provably finds (approximately-)op
 
 ![ICAPS-17](images/icaps-17.png){:width="350px"}
 
-[*See all publications.*](/publications/)
+[See all publications](/publications/)
