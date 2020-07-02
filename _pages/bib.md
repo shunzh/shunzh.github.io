@@ -12,6 +12,7 @@ In _International Conference on Automated Planning and Scheduling (ICAPS)_, 2017
 
 Ruohan Zhang, **Shun Zhang**, Matthew Tong, Mary Hayhoe, and Dana Ballard. "Modeling Sensorimotor Behavior through Modular Inverse Reinforcement Learning with Discount Factors".
 In _Journal of Vision_, 2017.
+
 Katie Genter, **Shun Zhang**, and Peter Stone. "Determining Placements of Influencing Agents in a Flock".
 In _Autonomous Agents and Multiagent Systems (AAMAS)_, 2015.
 [paper](/files/AAMAS15-katie-flocking.pdf)

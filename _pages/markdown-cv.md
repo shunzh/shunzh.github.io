@@ -18,7 +18,7 @@ Reinforcement learning; planning under uncertainty; learning with human-in-the-l
 
 `2015-2020`
 **Ph.D.**, *University of Michigan*
-*   Thesis: Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety
+*   Dissertation: Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety
 *   Advisors: Satinder Singh, Edmund H. Durfee
 *   GPA: 3.9 / 4.0
 
@@ -35,7 +35,7 @@ Reinforcement learning; planning under uncertainty; learning with human-in-the-l
 ## Work experience
 
 `2015-2020`
-**Graduate Research Assistant**, *University of Michigan*
+**Graduate Research Assistant**, *University of Michigan* (Ann Arbor, MI)
 *   Conducted research and published papers on preference elicitation and AI safety in reinforcement learning.
 
 `2014`
