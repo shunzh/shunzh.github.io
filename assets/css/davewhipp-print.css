@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  margin-left: .6in;
+  margin-right: .6in;
+  margin-top .6in;
+  margin-bottom .6in;
 }
 ol, ul {
 	list-style: none;
@@ -56,39 +60,31 @@ body {
 	font-size: 12pt;
 	line-height: 1.35em;
 	/*also written as...  font: normal normal 400 100%/1.5em;*/
-	font-family: Avenir,Verdana,sans-serif;
+	/*font-family: Avenir,Verdana,sans-serif;*/
 	/*margin-top: 1em;
 	margin-left: 1em;*/
 }
 
 p {
 	position: relative;
-	left: 25%;
 	margin-bottom: 0.2em;
 	margin-right: 0;
-	width: 60%;
 }
 
 code {
-	font: normal normal;
 	font-size: 90%;
-	/*line-height: 1em;*/
-	font-family: Monaco,Menlo,monospace,sans-serif;
 	color: #ccc;
 }
 
 p code {
-	position: absolute;
-	text-align: right;
 	right: -20%;
+  float: right;
 }
 
 
 ul {
 	position: relative;
-	left: 25%;
-	width: 65%;
-	margin-bottom: 1em;
+	margin-bottom: 0.8em;
 	/*margin-top: -0.5em;*/
 }
 
@@ -115,17 +111,14 @@ li ul {
 
 h1,h2,h3,h4 {
 	font-weight: 400;
-	font-family: Avenir,Cousine,Verdana,sans-serif;
-	width: 80%;
 }
 
 h1 {
 	text-align: left;
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1em;
-	position: relative;
-	left: 25%;
   margin-top: 0.5em;
+  margin-bottom: 0.1em;
 }
 
 h1+p {
@@ -135,24 +128,18 @@ h1+p {
 }
 
 h2 {
-	font-size: 1.1em;
-	color: #a00;
+	font-size: 1.2em;
 	margin-top: 1.2em;
-	position: relative;
 	top: 1.2em;
-	text-align: right;
-	width: 20%;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  border-bottom: 1px solid black;
 }
-
 
 h3 {
 	font-size: 1em;
 	line-height: 2em;
 	color: #ccc;
-	position: relative;
-	top: 1.6em;
-	text-align: right;
-	width: 20%;
 }
 
 a {
@@ -173,8 +160,7 @@ a {
 }
 
 em {
-	font-style: normal;
-	color: #2d4e5e
+  font-style: italic;
 }
 
 strong {

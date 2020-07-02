@@ -40,7 +40,7 @@ Reinforcement learning; planning under uncertainty; learning with human-in-the-l
 
 `2014`
 **SDE Intern**, *Amazon* (Seattle, WA)
-*   Created a prototype of a WebRTC-related internal tool using JavaScript.
+*   Created a WebRTC-related internal tool using JavaScript.
 
 `2013`
 **SDE Intern**, *Semantic Designs* (Austin, TX)
