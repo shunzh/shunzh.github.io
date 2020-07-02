@@ -57,8 +57,13 @@ body {
 	line-height: 1.5em;
 	/*also written as...  font: normal normal 400 100%/1.5em;*/
 	font-family: Avenir,Verdana,sans-serif;
+}
+
+#content {
 	margin-top: 1em;
 	margin-left: 1em;
+	margin-top: 1.8em;
+	margin-bottom: 2.5em;
 }
 
 p {
@@ -125,7 +130,6 @@ h1 {
 	line-height: 1em;
 	position: relative;
 	left: 25%;
-	margin-top: 0.8em;
 	margin-bottom: 0.1em;
 }
 

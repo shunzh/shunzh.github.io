@@ -33,7 +33,6 @@ body {
   margin-left: .6in;
   margin-right: .6in;
   margin-top .6in;
-  margin-bottom .6in;
 }
 ol, ul {
 	list-style: none;
@@ -105,7 +104,6 @@ li {
 li ul {
 	position: relative;
 	left: 0;
-	width: 100%;
 	margin-top: 0.25em;
   margin-bottom: 0em;
 }
@@ -125,7 +123,7 @@ h1 {
 h1+p {
 	/*subtitle*/
 	font-style: italic;
-	font-size: 110%;
+	font-size 110%;
 }
 
 h2 {
@@ -133,13 +131,14 @@ h2 {
 	margin-top: 1.2em;
 	top: 1.2em;
   font-weight: bold;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
   border-bottom: 1px solid black;
 }
 
 h3 {
 	font-size: 1em;
 	line-height: 2em;
+	font-weight: bold;
 }
 
 a {
