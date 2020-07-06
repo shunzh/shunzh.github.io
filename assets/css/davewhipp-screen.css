@@ -133,11 +133,12 @@ h1 {
 	margin-bottom: 0.1em;
 }
 
+/*subtitle*/
+/*
 h1+p {
-	/*subtitle*/
 	font-style: italic;
 	font-size: 110%;
-}
+} */
 
 h2 {
 	font-size: 1.1em;
@@ -159,7 +160,16 @@ h3 {
 }
 
 a {
-	display:none;
+	color: inherit;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#39f
+}
+
+.paper {
+  display: none;
 }
 
 #webaddress {

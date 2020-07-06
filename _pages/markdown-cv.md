@@ -5,10 +5,8 @@ permalink: /markdown-cv/
 author_profile: false
 ---
 # Shun Zhang
-Reinforcement learning researcher
-
-Email: shunzh@umich.edu <br>
-Homepage: shunzh.github.io
+Email: [shunzh@umich.edu](mailto:shunzh@umich.edu) <br>
+Homepage: [shunzh.github.io](https://shunzh.github.io)
 
 ## Research interests
 

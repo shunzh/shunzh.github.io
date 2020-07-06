@@ -17,6 +17,8 @@ advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof.
 My dissertation is on _Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety_ ([defense slides](https://drive.google.com/open?id=1QpnL0vLfObmgCXLCJnaB3lUllLCgnIDq)).
 I received BS and MS in computer science at the University of Texas at Austin.
 
+My CV in [HTML](/markdown-cv/) and [PDF](/files/shun-zhang-cv.pdf).
+
 ## Featured Work
 
 **Querying to Find a Safe Policy Under Uncertain Safety Constraints in Markov Decision Processes** <br>

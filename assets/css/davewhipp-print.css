@@ -120,11 +120,12 @@ h1 {
   margin-bottom: 0.1em;
 }
 
+/*subtitle*/
+/*
 h1+p {
-	/*subtitle*/
 	font-style: italic;
 	font-size 110%;
-}
+} */
 
 h2 {
 	font-size: 1.2em;
@@ -142,7 +143,12 @@ h3 {
 }
 
 a {
-	display: none;
+	color: inherit;
+	text-decoration:none
+}
+
+.paper {
+  display: none;
 }
 
 #webaddress {
