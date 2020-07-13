@@ -14,7 +14,7 @@ Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!
 My research interests lie in reinforcement learning, learning/planning under uncertainty, meta-reinforcement learning, and artificial general intelligence (AGI).
 I received my Ph.D. at the University of Michigan,
 advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof. [Ed Durfee](http://ai.eecs.umich.edu/people/durfee/). 
-My dissertation is on _Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety_ ([defense slides](https://drive.google.com/open?id=1QpnL0vLfObmgCXLCJnaB3lUllLCgnIDq)).
+My dissertation is on _Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety_ ([defense slides](https://drive.google.com/open?id=1QpnL0vLfObmgCXLCJnaB3lUllLCgnIDq), [dissertation](https://drive.google.com/file/d/1CFpapF2MPD02sX9rKfbtZcGiuHCm1ea5/view?usp=sharing)).
 I received BS and MS in computer science at the University of Texas at Austin.
 
 My CV in [HTML](/markdown-cv/) and [PDF](/files/shun-zhang-cv.pdf).
@@ -26,7 +26,7 @@ In AAAI 2020. Joint work with Edmund H. Durfee and Satinder Singh. <br>
 [paper](/files/shun-aaai-2020.pdf)
 
 When a human user specifies a goal for a robot to achieve, the robot may find its policy cause side effects that the user may think unsafe. How should the robot efficiently query the human to find a guaranteed-safe policy (if one exists)?
-We contribute a set-cover-based algorithm that outperforms some baseline methods.
+We identify and exploit a set-cover-based structure in this problem and contribute an algorithm that finds better queries than some baseline methods.
 
 ![AAAI-20](images/aaai-20.png){:width="350px"}
 
