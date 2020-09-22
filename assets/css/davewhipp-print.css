@@ -104,7 +104,7 @@ li {
 li ul {
 	position: relative;
 	left: 0;
-	margin-top: 0.25em;
+	margin-top: 0.2em;
   margin-bottom: 0em;
 }
 
@@ -132,7 +132,7 @@ h2 {
 	margin-top: 1.2em;
 	top: 1.2em;
   font-weight: bold;
-  margin-bottom: 0.18em;
+  margin-bottom: 0.2em;
   border-bottom: 1px solid black;
 }
 
