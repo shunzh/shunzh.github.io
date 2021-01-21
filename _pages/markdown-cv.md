@@ -10,7 +10,25 @@ Homepage: [shunzh.github.io](https://shunzh.github.io)
 
 ## Research interests
 
-Reinforcement learning; planning under uncertainty; learning with human-in-the-loop; preference elicitation; AI safety.
+Reinforcement learning; planning under uncertainty; learning with human-in-the-loop; artificial general intelligence.
+
+## Work experience
+
+`Aug. 2020 - Present`
+**Postdoctoral Researcher**, *IBM Research* (Boston, MA; Remote)
+*   Conducted research in active learning and AI for design.
+
+`Sep. 2015 - Apr. 2020`
+**Graduate Research Assistant**, *University of Michigan* (Ann Arbor, MI)
+*   Conducted research and published papers on preference elicitation and AI safety in reinforcement learning.
+
+`2014`
+**SDE Intern**, *Amazon* (Seattle, WA)
+*   Created a WebRTC-related internal tool using JavaScript.
+
+`2013`
+**SDE Intern**, *Semantic Designs* (Austin, TX)
+*   Adding features to to help visualization for a programming language analysis tool using Java.
 
 ## Education
 
@@ -29,20 +47,6 @@ Reinforcement learning; planning under uncertainty; learning with human-in-the-l
 `2014`
 **B.S. in Computer Science**, *University of Texas at Austin*
 *   GPA: (major) 3.8 / 4.0, (overall) 3.6 / 4.0
-
-## Work experience
-
-`2015-2020`
-**Graduate Research Assistant**, *University of Michigan* (Ann Arbor, MI)
-*   Conducted research and published papers on preference elicitation and AI safety in reinforcement learning.
-
-`2014`
-**SDE Intern**, *Amazon* (Seattle, WA)
-*   Created a WebRTC-related internal tool using JavaScript.
-
-`2013`
-**SDE Intern**, *Semantic Designs* (Austin, TX)
-*   Created a GUI interface for a programming language analysis tool using Java.
 
 
 ## Publications
