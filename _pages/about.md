@@ -17,27 +17,8 @@ advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof.
 My dissertation is on _Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety_ ([defense slides](https://drive.google.com/open?id=1QpnL0vLfObmgCXLCJnaB3lUllLCgnIDq)).
 Before that, I received BS and MS in computer science at the University of Texas at Austin.
 
-My CV in [HTML](/markdown-cv/) and [PDF](/files/shun-zhang-cv.pdf).
+My [CV](/files/shun-zhang-cv.pdf) (and my [new cooler CV](/files/cv.pdf) generated using R Markdown).
 
-## Featured Work
+## Publications
 
-**Querying to Find a Safe Policy Under Uncertain Safety Constraints in Markov Decision Processes** <br>
-In AAAI 2020. Joint work with Edmund H. Durfee and Satinder Singh. <br>
-[paper](/files/shun-aaai-2020.pdf)
-
-When a human user specifies a goal for a robot to achieve, the robot may find its policy cause side effects that the user may think unsafe. How should the robot efficiently query the human to find a guaranteed-safe policy (if one exists)?
-We identify and exploit a set-cover-based structure in this problem and contribute an algorithm that finds better queries than some baseline methods.
-
-![AAAI-20](images/aaai-20.png){:width="350px"}
-
----
-**Approximately-Optimal Queries for Planning in Reward-Uncertain Markov Decision Processes** <br>
-In ICAPS 2017. Joint work with Edmund H. Durfee and Satinder Singh. <br>
-[paper](/files/shun-icaps-2017.pdf)
-
-When a robot serves a human user and is uncertain about the human's preference (the reward function), what's the best question (given a fixed budget) to ask to maximally improve its policy?
-We contribute a query selection algorithm that provably finds (approximately-)optimal queries by exploiting the submodularity property of the objective.
-
-![ICAPS-17](images/icaps-17.png){:width="350px"}
-
-[See all publications](/publications/)
+{% include_relative bib.md %}
