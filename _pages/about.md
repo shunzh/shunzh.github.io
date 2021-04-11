@@ -8,10 +8,8 @@ redirect_from:
 ---
 
 Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!
-<!--**I will join IBM as a postdoctoral researcher in summer 2020** (base in Ann Arbor).
--->
 
-I am a postdoctoral researcher at IBM<sup>1</sup>.
+I am a postdoctoral researcher at IBM-NJIT.
 My current research interests lie in offline / causal reinforcement learning and artificial general intelligence (AGI).
 
 I received my Ph.D. at the University of Michigan,
@@ -24,6 +22,3 @@ Before that, I received BS and MS in computer science at the University of Texas
 ## Publications
 
 {% include_relative bib.md %}
-
----
-<small><sup>1</sup> Currently hired by New Jersey Institute of Technology due to headcount freezes. Transfer to IBM in process.</small>
