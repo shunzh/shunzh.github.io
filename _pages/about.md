@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!
 
-I am a postdoctoral researcher at IBM-NJIT.
+I am a postdoctoral researcher at IBM.
 My current research interests lie in offline / causal reinforcement learning and artificial general intelligence (AGI).
 
 I received my Ph.D. at the University of Michigan,
