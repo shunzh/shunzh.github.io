@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Minimax-Regret Querying on Side Effects for Safe Optimality in Factored Markov Decision Processes"
+image: /images/ijcai-2018.png
+categories: research
+venue: "International Joint Conference on Artificial Intelligence (IJCAI), 2018"
+authors: "<strong>Shun Zhang</strong>, Edmund H. Durfee, and Satinder Singh"
+paper: "pdfs/shun-ijcai-2018.pdf"
+---
+Also presented as an extended abstract at _Autonomous Agents and Multiagent Systems (AAMAS)_, 2018.

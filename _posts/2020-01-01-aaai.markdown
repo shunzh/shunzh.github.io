@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Querying to Find a Safe Policy Under Uncertain Safety Constraints in Markov Decision Processes"
+image: /images/aaai-2020.png
+categories: research
+venue: "AAAI Conference on Artificial Intelligence (AAAI), 2020"
+authors: "<strong>Shun Zhang</strong>, Edmund H. Durfee, and Satinder Singh"
+paper: "pdfs/shun-aaai-2020.pdf"
+---
+Also presented at the _Safety and Robustness in Decision-making Workshop_ at _NeurIPS_, 2019.

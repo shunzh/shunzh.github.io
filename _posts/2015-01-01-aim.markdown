@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Autonomous Intersection Management for Semi-Autonomous Vehicles"
+image: /images/aim.png
+categories: research
+venue: "Handbook of Transportation, 2015"
+authors: "Tsz-Chiu Au, <strong>Shun Zhang</strong>, and Peter Stone"
+paper: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/Routledge15-Au.pdf"
+---
+Also presented as an extended abstract at _Autonomous Agents and Multiagent Systems (AAMAS)_, 2014.

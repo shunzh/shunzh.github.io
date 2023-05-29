@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Prompting Decision Transformer for Few-shot Policy Generalization"
+image: /images/prompt-dt.png
+categories: research
+venue: "International Conference on Machine Learning (ICML), 2022"
+authors: "Mengdi Xu, Yikang Shen, <strong>Shun Zhang</strong>, Yuchen Lu, Ding Zhao, Joshua B. Tenenbaum, and Chuang Gan"
+paper: "https://arxiv.org/abs/2206.13499"
+---

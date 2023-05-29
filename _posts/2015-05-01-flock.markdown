@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Determining Placements of Influencing Agents in a Flock"
+image: /images/flock.png
+categories: research
+venue: "Autonomous Agents and Multiagent Systems (AAMAS), 2015"
+authors: "Katie Genter, <strong>Shun Zhang</strong>, and Peter Stone"
+paper: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.pdf"
+slides: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.slides.pdf"
+---

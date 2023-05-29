@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Hyper-Decision Transformer for Efficient Online Policy Adaptation"
+image: /images/hyper-dt.png
+categories: research
+venue: "International Conference on Learning Representations (ICLR), 2023"
+authors: "Mengdi Xu, Yuchen Lu, Yikang Shen, <strong>Shun Zhang</strong>, Ding Zhao, and Chuang Gan"
+paper: "https://arxiv.org/abs/2304.08487"
+---
+Also presented at the _Foundation Models for Decision Making Workshop_ at _NeurIPS_, 2022.
