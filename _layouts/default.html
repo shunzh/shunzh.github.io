@@ -50,6 +50,7 @@ Prof. <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and Prof. <a 
  
               <p style="text-align:center">
                 <a href="mailto:shunzh@umich.edu"> Email </a> &nbsp;/&nbsp;
+                <a href="/cv/"> CV </a> &nbsp;/&nbsp;
                 <a href="https://github.com/shunzh"> GitHub </a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=0Fk7sSAAAAAJ"> Google Scholar </a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/shun-zhang-1b154437/"> LinkedIn </a> &nbsp;/&nbsp;
@@ -73,7 +74,8 @@ Prof. <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and Prof. <a 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          <!-- in research category, and has a image (otherwise assume we want to hide it) -->
+          {% if cat == 'research' and post.image %}
           <tr>
             <td style="padding:2.5%;width:28%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -118,7 +120,8 @@ Prof. <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and Prof. <a 
               <br>
               <p style="text-align:center;font-size:small;">
                 Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-                and <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman</a>'s <a style="font-size:small;" href="https://github.com/leonidk/new_website">Jekyll fork</a>.
+                and <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman</a>'s <a style="font-size:small;" href="https://github.com/leonidk/new_website">Jekyll fork</a>.<br>
+                CV template from <a style="font-size:small;" href="https://mike.place/">Mike Lee Williams</a>'s <a style="font-size:small;" href="https://github.com/mikepqr/resume.md">resume.md</a>.
               </p>
             </td>
           </tr>
