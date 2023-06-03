@@ -12,20 +12,20 @@ permalink: /cv/
 
 ## Experience
 
-### <span>Research Scientist, MIT-IBM Watson AI Lab<br>Postdoctoral Researcher, MIT-IBM Watson AI Lab<br>Postdoctoral Researcher, IBM-NJIT (New Jersey Institute of Technology)</span> <span>Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
+### <span>Research Scientist, MIT-IBM Watson AI Lab _(Cambridge, MA; Remote)_<br>Postdoctoral Researcher, MIT-IBM Watson AI Lab _(Cambridge, MA; Remote)_<br>Postdoctoral Researcher, IBM-NJIT _(Newark, NJ; Remote)_</span> <span>Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
-- Research and publish academic papers on reinforcement learning and foundation models, with a focus on the applications of competitive-level code generation and AI for electric circuit design automation.
+- Research and publish academic papers on **reinforcement learning** and **large language models**, with a focus on the applications of competitive-level code generation and AI for electric circuit design automation.
 
-### <span>Graduate Research Assistant, University of Michigan (Ann Arbor, MI)</span> <span>Sep. 2015 - Apr. 2020</span>
+### <span>Graduate Research Assistant, University of Michigan _(Ann Arbor, MI)_</span> <span>Sep. 2015 - Apr. 2020</span>
 
-- Conducted research and published papers on preference elicitation and AI safety in reinforcement learning.
+- Conducted research and published papers on **preference elicitation** and **AI safety in reinforcement learning**.
 - Designed active learning algorithms to improve a learning agent's performance and guarantee safety in domains with uncertain objectives.
 
-### <span>Software Development Engineer Intern, Amazon (Seattle, WA)</span> <span>Jun. - Aug. 2014</span>
+### <span>Software Development Engineer Intern, Amazon _(Seattle, WA)_</span> <span>Jun. - Aug. 2014</span>
 
 - Created a WebRTC-related internal tool to resolve cross-departmental communication issues.
 
-### <span>Software Development Engineer Intern, Semantic Designs (Austin, TX)</span> <span>Jun. - Aug. 2013</span>
+### <span>Software Development Engineer Intern, Semantic Designs _(Austin, TX)_</span> <span>Jun. - Aug. 2013</span>
 
 - Created a user interface for a programming language analysis tool for better visualization.
 
