@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shun Zhang's CV</title>
+<title>{{ page.title }}</title>
 <style>
 body {
     color: #000000;
@@ -128,15 +128,7 @@ a:hover {
 
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YD0Y04BWT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0YD0Y04BWT');
-</script>
+{% include ga4.html %}
 </head>
 <body>
 <div id="resume">
