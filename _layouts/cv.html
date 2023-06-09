@@ -101,6 +101,9 @@ a:hover {
         color: #000000;
         text-decoration: underline;
     }
+    #printShortcut {
+        display: none;
+    }
 }
 @page {
     /* Change margins and paper size of PDF */
@@ -123,11 +126,9 @@ a:hover {
         box-shadow: none;
         -webkit-box-shadow: none;
     }
-
-
 }
-
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 {% include ga4.html %}
 </head>
@@ -135,5 +136,12 @@ a:hover {
 <div id="resume">
     {{ content }}
 </div>
+
+<center>
+    <p id="printShortcut" style="margin-top: 20px;">
+    <a href="#" onclick="window.print(); return false;"><i class="fas fa-print"></i> Print this page</a>
+    </p>
+</center>
+
 </body>
 </html>

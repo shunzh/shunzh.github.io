@@ -13,7 +13,7 @@ permalink: /cv/
 
 ## Experience
 
-### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span>Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
+### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
 - Research and publish academic papers on **reinforcement learning** and **large language models**, with a focus on the applications of competitive-level code generation and AI for electric circuit design automation.
 
@@ -50,14 +50,12 @@ permalink: /cv/
 <p></p>
 
 {% for post in site.posts %}
-{% for cat in post.categories %}
-{% if cat == 'research' %}
+{% if post.categories contains 'research' %}
 - **{{ post.title }}**<br>
 {{ post.authors }}<br>
 *{{ post.venue }}*<br>
 {% if post.paper %}<a href="{{post.paper}}">paper</a>{% endif %}
 {% endif %}
-{% endfor %}
 {% endfor %}
 
 
