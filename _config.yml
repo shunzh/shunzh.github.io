@@ -18,15 +18,7 @@ avatar: images/shun_profile.jpeg
 # Google Analytics 4 tracking ID
 google_analytics: G-0YD0Y04BWT
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: "https://shunzh.github.io" # the base hostname & protocol for your site
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#baseurl: ""
+homepage_url: "https://shunzh.github.io" # the location where you host your personal homepage
 
 #
 # !! You don't need to change any of the configuration flags below !!

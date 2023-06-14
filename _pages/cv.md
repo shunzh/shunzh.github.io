@@ -54,7 +54,7 @@ permalink: /cv/
 - **{{ post.title }}**<br>
 {{ post.authors }}<br>
 *{{ post.venue }}*<br>
-{% if post.paper %}<a href="{{post.paper}}">paper</a>{% endif %}
+{% if post.paper contains '://' %}{% assign absoluteUrl = post.paper %}{% else %}{% assign absoluteUrl = site.homepage_url | append: post.paper %}{% endif %}{% if post.paper %}<a href="{{ absoluteUrl }}">paper</a>{% endif %}
 {% endif %}
 {% endfor %}
 

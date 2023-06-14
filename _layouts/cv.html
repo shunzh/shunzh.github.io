@@ -81,7 +81,7 @@ a:hover {
 }
 @media print {
     body {
-        font-size: 11pt;
+        font-size: 12pt;
         margin: 0;
         padding: 0;
         background: none;
@@ -100,19 +100,15 @@ a:hover {
         color: #000000;
         text-decoration: underline;
     }
-    #printShortcut {
-        display: none;
-    }
 }
 @page {
     /* Change margins and paper size of PDF */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
     size: letter;
-    margin: 0.5in 0.8in;
+    margin: 0.6in 0.8in;
 }
 @media screen and (max-width: 800px) {
     body {
-        font-size: 16pt;
         margin: 0;
         padding: 0;
         background: #FFFFFF !important;
@@ -135,12 +131,6 @@ a:hover {
 <div id="resume">
     {{ content }}
 </div>
-
-<center>
-    <p id="printShortcut" style="margin-top: 20px;">
-    <a href="#" onclick="window.print(); return false;"><i class="fas fa-print"></i> Print this page</a>
-    </p>
-</center>
 
 </body>
 </html>
