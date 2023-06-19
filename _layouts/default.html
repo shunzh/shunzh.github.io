@@ -40,7 +40,7 @@
               I received both my B.S. and M.S. in computer science from the University of Texas at Austin, where I conducted my undergraduate and master's research under the guidance of
               Prof. <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and Prof. <a href="https://www.cs.utexas.edu/~dana/">Dana Ballard</a>.</p>
 
-              <p>My CV in <a href="/cv/">HTML</a> and <a href="shun-zhang-cv.pdf">PDF</a>.</p>
+              <p>My CV in <a href="/cv/">HTML</a> and <a href="/pdfs/shun-zhang-cv.pdf">PDF</a>.</p>
 
               <p style="text-align:center">
                 <a href="mailto:shunzh@umich.edu"> Email </a> &nbsp;/&nbsp;
@@ -68,7 +68,7 @@
         </table>
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <!-- print everything in research category which has a image (otherwise assume we want to hide it) -->
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
@@ -107,7 +107,7 @@
               <p></p>
               {% if post.tags %}
               {% for tag in post.tags %}
-                <span style="background-color: #f2f2f2; padding: 0 6px;"># {{ tag }}</span>
+                <span class="tag"># {{ tag }}</span>
               {% endfor %}
               {% endif %}
             </td>
