@@ -31,7 +31,7 @@
               <p>Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!</p>
 
               <p>I am a research scientist at the MIT-IBM Watson AI Lab.
-              My primary research interests lie in the fields of <strong>reinforcement learning (RL)</strong>, <strong>large language models (LLM)</strong>, and <strong>artificial general intelligence (AGI)</strong>.
+              My research interests lie in <strong>reinforcement learning (RL)</strong>, <strong>large language models (LLM)</strong>, and <strong><a href="https://en.wikipedia.org/wiki/AI_alignment">value alignment</a></strong>.
               Specifically, I focus on the applications of RL and LLM in the domain of <strong>automatic code generation</strong>.</p>
 
               <p>I obtained my Ph.D. from the University of Michigan,
@@ -103,8 +103,13 @@
               {% if post.code %}
               [<a href="{{post.code}}">code</a>] 
               {% endif %}
-              <p></p>
               {{ post.excerpt }}
+              <p></p>
+              {% if post.tags %}
+              {% for tag in post.tags %}
+                <span style="background-color: #f2f2f2; padding: 0 6px;"># {{ tag }}</span>
+              {% endfor %}
+              {% endif %}
             </td>
           </tr>
           {% endif %}
