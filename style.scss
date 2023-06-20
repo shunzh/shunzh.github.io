@@ -30,13 +30,13 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-display: auto;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-display: auto;
 }
 
@@ -52,7 +52,7 @@ h2 {
 
 h3 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   font-display: auto;
   padding: 0px;
@@ -103,6 +103,10 @@ span.highlight {
   background-color: #f2f2f2;
   color: #444444;
   padding: 0 6px;
+}
+
+.star {
+  // color: #FF6600;
 }
 
 @media (max-width: 800px) {
