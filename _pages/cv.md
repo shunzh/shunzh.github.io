@@ -5,6 +5,7 @@ permalink: /cv/
 ---
 # Shun Zhang
 
+{: #contact}
 - <i class="fas fa-envelope"></i>  [shunzh@umich.edu](mailto:shunzh@umich.edu)
 - <i class="fas fa-globe"></i>  [shunzh.github.io](http://shunzh.github.io/)
 - <i class="fas fa-map-marker-alt"></i>  San Francisco Bay Area
