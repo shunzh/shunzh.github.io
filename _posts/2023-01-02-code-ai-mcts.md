@@ -5,7 +5,13 @@ image: /images/code-mcts.png
 categories: research
 tags: [large language models, planning]
 venue: "International Conference on Learning Representations (ICLR), 2023"
-authors: "<strong>Shun Zhang</strong>, Zhenfang Chen, Yikang Shen, Mingyu Ding, Joshua B. Tenenbaum, and Chuang Gan"
+authors:
+    - Shun Zhang
+    - Zhenfang Chen
+    - Yikang Shen
+    - Mingyu Ding
+    - Joshua B. Tenenbaum
+    - Chuang Gan
 paper: "https://arxiv.org/abs/2303.05510"
 slides: "/pdfs/Code_AI_ICLR.pdf"
 website: "https://codeaimcts.github.io/"

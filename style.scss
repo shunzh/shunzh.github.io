@@ -109,6 +109,12 @@ span.highlight {
   color: #FF6600;
 }
 
+/* Prevent hyperlink style change for the 'author' class */
+a.author {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 @media (max-width: 800px) {
   #research td {
     border-bottom: 1px solid #ccc;
