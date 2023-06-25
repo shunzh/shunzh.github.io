@@ -50,16 +50,44 @@ permalink: /cv/
 
 <p></p>
 
+<ul>
 {% assign authorData = site.data.authors %}
 
 {% for post in site.posts %}
 {% if post.categories contains 'research' %}
-- **{{ post.title }}**<br>
-{% assign authorCount = post.authors.size %}{% for author in post.authors %}{% assign authorInfo = authorData | where: "name", author | first %}{% assign displayAuthor = author %}{% if authorInfo and authorInfo.is_me %}{% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}{% endif %}{% if forloop.first %}{% if authorCount == 1 %}{{ displayAuthor }}{% else %}{{ displayAuthor }}, {% endif %}{% elsif forloop.last %}and {{ displayAuthor }}{% else %}{{ displayAuthor }}, {% endif %}{% endfor %}<br>
-*{{ post.venue }}*<br>
-{% if post.paper contains '://' %}{% assign absoluteUrl = post.paper %}{% else %}{% assign absoluteUrl = site.homepage_url | append: post.paper %}{% endif %}{% if post.paper %}<a href="{{ absoluteUrl }}">paper</a>{% endif %}
+<li><p>
+<strong>{{ post.title }}</strong>
+<br>
+{% assign authorCount = post.authors.size %}
+{% for author in post.authors %}
+    {% assign authorInfo = authorData | where: "name", author | first %}
+    {% assign displayAuthor = author %}
+    {% if authorInfo and authorInfo.is_me %}
+        {% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}
+    {% endif %}
+    {% if forloop.first %}
+        {{ displayAuthor }}{% if authorCount > 2 %},{% endif %}
+    {% elsif forloop.last %}
+        and {{ displayAuthor }}
+    {% else %}
+        {{ displayAuthor }},
+    {% endif %}
+{% endfor %}
+<br>
+<em>{{ post.venue }}</em>
+<br>
+{% if post.paper contains '://' %}
+    {% assign absoluteUrl = post.paper %}
+{% else %}
+    {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+{% endif %}
+{% if post.paper %}
+    <a href="{{ absoluteUrl }}">paper</a>
+{% endif %}
+</p></li>
 {% endif %}
 {% endfor %}
+</ul>
 
 
 ## Academic Services
