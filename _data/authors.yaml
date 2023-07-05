@@ -1,5 +1,7 @@
 - name: Shun Zhang
   is_me: true
+
+# my advisors :toast:
 - name: Satinder Singh
   website: https://web.eecs.umich.edu/~baveja/
 - name: Edmund H. Durfee
@@ -10,6 +12,8 @@
   website: https://www.cs.utexas.edu/~dana/
 - name: Mary M. Hayhoe
   website: https://liberalarts.utexas.edu/psychology/faculty/mmh739
+
+# my collaborators at UT
 - name: Ruohan Zhang
   website: https://ai.stanford.edu/~zharu/
 - name: Yuchen Cui
@@ -20,7 +24,10 @@
   website: https://ai.unist.ac.kr/~chiu/
 - name: Katie Genter
   website: https://www.linkedin.com/in/katie-genter-b47715ba/
+- name: Matthew H. Tong
+  website: https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Matt.Tong
 
+# my collaborators at IBM
 - name: Mengdi Xu
   website: https://mxu34.github.io
 - name: Zhenfang Chen
