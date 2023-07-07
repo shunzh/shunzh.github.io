@@ -71,7 +71,8 @@
         <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% assign authorData = site.data.authors %}
 
-          <!-- print everything in research category which has a image (otherwise assume we want to hide it) -->
+          {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
+
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
           <tr>
@@ -83,6 +84,7 @@
                 {{post.title}}
               </h3>
               <br>
+              <span class="authors">
               {% assign authorCount = post.authors.size %}
               {% for author in post.authors %}
                 {% assign authorInfo = authorData | where: "name", author | first %}
@@ -91,7 +93,7 @@
                   {% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}
                 {% endif %}
                 {% if authorInfo and authorInfo.website %}
-                  {% assign displayAuthor = '<a href="' | append: authorInfo.website | append: '" class="author">' | append: author | append: '</a>' %}
+                  {% assign displayAuthor = '<a href="' | append: authorInfo.website | append: '">' | append: author | append: '</a>' %}
                 {% endif %}
 
                 {% if forloop.first %}
@@ -102,6 +104,7 @@
                   {{ displayAuthor }},
                 {% endif %}
               {% endfor %}
+              </span>
               <br>
               <em>{{post.venue}}</em>
               <br>

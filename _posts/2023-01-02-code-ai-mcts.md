@@ -6,12 +6,12 @@ categories: research
 tags: [large language models, planning]
 venue: "International Conference on Learning Representations (ICLR), 2023"
 authors:
-    - Shun Zhang
-    - Zhenfang Chen
-    - Yikang Shen
-    - Mingyu Ding
-    - Joshua B. Tenenbaum
-    - Chuang Gan
+  - Shun Zhang
+  - Zhenfang Chen
+  - Yikang Shen
+  - Mingyu Ding
+  - Joshua B. Tenenbaum
+  - Chuang Gan
 paper: "https://arxiv.org/abs/2303.05510"
 slides: "/pdfs/Code_AI_ICLR.pdf"
 website: "https://codeaimcts.github.io/"

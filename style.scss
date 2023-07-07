@@ -110,11 +110,11 @@ span.highlight {
 }
 
 /* Prevent hyperlink style change for the 'author' class */
-a.author {
+.authors a {
   color: inherit;
   text-decoration: inherit;
 }
-a.author:hover {
+.authors a:hover {
   color: #777;
 }
 
