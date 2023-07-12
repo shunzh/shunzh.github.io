@@ -30,9 +30,10 @@
 
               <p>Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!</p>
 
-              <p>I am a research scientist at the MIT-IBM Watson AI Lab.
+              <p>I am a research scientist at the <a href="https://mitibmwatsonailab.mit.edu/">MIT-IBM Watson AI Lab</a>.
               My research interests lie in <strong>reinforcement learning (RL)</strong>, <strong>large language models (LLM)</strong>, and <strong><a href="https://en.wikipedia.org/wiki/AI_alignment">value alignment</a></strong>.
-              Specifically, I focus on the applications of RL and LLM in the domain of <strong>automatic code generation</strong>.</p>
+              <!-- Specifically, I focus on the applications of RL and LLM in the domain of <strong>automatic code generation</strong>. -->
+              </p>
 
               <p>I obtained my Ph.D. from the University of Michigan,
               where I was advised by Prof. <a href="https://web.eecs.umich.edu/~baveja/">Satinder Singh</a> and Prof. <a href="https://durfee.engin.umich.edu/">Ed Durfee</a>.
@@ -60,9 +61,6 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
-              <!-- <p style="margin-block-end: 0;">
-                Representative papers are highlighted in <span class="star">orange</span> color.
-              </p> -->
             </td>
           </tr>
         </table>
@@ -76,13 +74,11 @@
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
           <tr>
-            <td style="padding:2.5%;width:28%;vertical-align:middle;min-width:120px">
+            <td style="padding:2.5%;width:32%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3 {% if post.categories contains 'star' %}class="star"{% endif %}>
-                {{post.title}}
-              </h3>
+            <td style="padding:2.5%;width:73%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
               <br>
               <span class="authors">
               {% assign authorCount = post.authors.size %}
@@ -142,10 +138,10 @@
           <tr>
             <td style="padding:0px">
               <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-                and <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman</a>'s <a style="font-size:small;" href="https://github.com/leonidk/new_website">Jekyll fork</a>.<br>
-                CV template from <a style="font-size:small;" href="https://mike.place/">Mike Lee Williams</a>'s <a style="font-size:small;" href="https://github.com/mikepqr/resume.md">resume.md</a>.
+              <p id="footer">
+                Design and source code from <a href="https://jonbarron.info">Jon Barron's website</a>
+                and <a href="https://leonidk.com/">Leonid Keselman</a>'s <a style="font-size:small;" href="https://github.com/leonidk/new_website">Jekyll fork</a>.<br>
+                CV template from <a href="https://mike.place/">Mike Lee Williams</a>'s <a href="https://github.com/mikepqr/resume.md">resume.md</a>.
               </p>
             </td>
           </tr>

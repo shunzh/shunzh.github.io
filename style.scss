@@ -118,6 +118,11 @@ span.highlight {
   color: #777;
 }
 
+#footer, #footer a {
+  text-align: center;
+  font-size: small;
+}
+
 @media (max-width: 800px) {
   #research td {
     border-bottom: 1px solid #ccc;
