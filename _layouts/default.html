@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>{{ site.name }}</title>
+  <title>{{ page.title }}</title>
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
@@ -26,33 +26,18 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:60%;vertical-align:middle">
 
-              <h1>Shun Zhang</h1>
-
-              <p>Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!</p>
-
-              <p>I am a research scientist at the <a href="https://mitibmwatsonailab.mit.edu/">MIT-IBM Watson AI Lab</a>.
-              My research interests lie in <strong>reinforcement learning (RL)</strong>, <strong>large language models (LLM)</strong>, and <strong><a href="https://en.wikipedia.org/wiki/AI_alignment">value alignment</a></strong>.
-              <!-- Specifically, I focus on the applications of RL and LLM in the domain of <strong>automatic code generation</strong>. -->
-              </p>
-
-              <p>I obtained my Ph.D. from the University of Michigan,
-              where I was advised by Prof. <a href="https://web.eecs.umich.edu/~baveja/">Satinder Singh</a> and Prof. <a href="https://durfee.engin.umich.edu/">Ed Durfee</a>.
-              Prior to that,
-              I received both my B.S. and M.S. in computer science from the University of Texas at Austin, where I conducted my undergraduate and master's research under the guidance of
-              Prof. <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and Prof. <a href="https://www.cs.utexas.edu/~dana/">Dana Ballard</a>.</p>
-
-              <p>My CV in <a href="/cv/">HTML</a> and <a href="/pdfs/shun-zhang-cv.pdf">PDF</a>.</p>
+              {{ page.content }}
 
               <p style="text-align:center">
-                <a href="mailto:shunzh@umich.edu"> Email </a> &nbsp;/&nbsp;
-                <a href="https://github.com/shunzh"> GitHub </a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=0Fk7sSAAAAAJ"> Google Scholar </a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/shun-zhang-1b154437/"> LinkedIn </a> &nbsp;/&nbsp;
-                <a href="https://twitter.com/shunzh_rl"> Twitter </a>
+                <a href="mailto:{{ site.email }}"> Email </a> &nbsp;/&nbsp;
+                <a href="https://github.com/{{ site.github_id }}"> GitHub </a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}"> Google Scholar </a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}"> LinkedIn </a> &nbsp;/&nbsp;
+                <a href="https://twitter.com/{{ site.twitter_id }}"> Twitter </a>
               </p>
             </td>
             <td style="padding:2.5%;width:30%;max-width:25%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/shun_profile.jpeg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="{{ site.avatar }}">
             </td>
           </tr>
         </table>
@@ -70,7 +55,6 @@
           {% assign authorData = site.data.authors %}
 
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
-
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
           <tr>
