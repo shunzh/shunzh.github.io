@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety"
 image: /images/dissertation.png
 categories: research

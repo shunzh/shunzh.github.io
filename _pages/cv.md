@@ -51,28 +51,12 @@ permalink: /cv/
 <p></p>
 
 <ul>
-{% assign authorData = site.data.authors %}
-
 {% for post in site.posts %}
 {% if post.categories contains 'research' %}
 <li><p>
 <strong>{{ post.title }}</strong>
 <br>
-{% assign authorCount = post.authors.size %}
-{% for author in post.authors %}
-    {% assign authorInfo = authorData | where: "name", author | first %}
-    {% assign displayAuthor = author %}
-    {% if authorInfo and authorInfo.is_me %}
-        {% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}
-    {% endif %}
-    {% if forloop.first %}
-        {{ displayAuthor }}{% if authorCount > 2 %},{% endif %}
-    {% elsif forloop.last %}
-        and {{ displayAuthor }}
-    {% else %}
-        {{ displayAuthor }},
-    {% endif %}
-{% endfor %}
+{% include list_authors.html authors=post.authors enable_links=false %}
 <br>
 <em>{{ post.venue }}</em>
 <br>

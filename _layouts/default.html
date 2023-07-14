@@ -52,8 +52,6 @@
 
 
         <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% assign authorData = site.data.authors %}
-
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
@@ -65,25 +63,7 @@
               <h3>{{post.title}}</h3>
               <br>
               <span class="authors">
-              {% assign authorCount = post.authors.size %}
-              {% for author in post.authors %}
-                {% assign authorInfo = authorData | where: "name", author | first %}
-                {% assign displayAuthor = author %}
-                {% if authorInfo and authorInfo.is_me %}
-                  {% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}
-                {% endif %}
-                {% if authorInfo and authorInfo.website %}
-                  {% assign displayAuthor = '<a href="' | append: authorInfo.website | append: '">' | append: author | append: '</a>' %}
-                {% endif %}
-
-                {% if forloop.first %}
-                  {{ displayAuthor }}{% if authorCount > 2 %},{% endif %}
-                {% elsif forloop.last %}
-                  and {{ displayAuthor }}
-                {% else %}
-                  {{ displayAuthor }},
-                {% endif %}
-              {% endfor %}
+              {% include list_authors.html authors=post.authors enable_links=true %}
               </span>
               <br>
               <em>{{post.venue}}</em>
@@ -116,7 +96,7 @@
           {% endfor %}
         </table>
 
-        <p>See the full publication list on my <a href="https://scholar.google.com/citations?user=0Fk7sSAAAAAJ&sortby=pubdate">Google Scholar</a>.</p>
+        <p>See the full publication list on my <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}&sortby=pubdate">Google Scholar</a>.</p>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>

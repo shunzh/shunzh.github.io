@@ -1,0 +1,24 @@
+{% assign enable_links = include.enable_links | default: false %}
+{% assign authors = include.authors %}
+{% assign authorCount = authors.size %}
+
+{% assign authorData = site.data.authors %}
+
+{% for author in authors %}
+    {% assign authorInfo = authorData | where: "name", author | first %}
+    {% assign displayAuthor = author %}
+    {% if authorInfo and authorInfo.is_me %}
+        {% assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' %}
+    {% endif %}
+    {% if enable_links and authorInfo and authorInfo.website %}
+        {% assign displayAuthor = '<a href="' | append: authorInfo.website | append: '">' | append: author | append: '</a>' %}
+    {% endif %}
+
+    {% if forloop.first %}
+        {{ displayAuthor }}{% if authorCount > 2 %},{% endif %}
+    {% elsif forloop.last %}
+        and {{ displayAuthor }}
+    {% else %}
+        {{ displayAuthor }},
+    {% endif %}
+{% endfor %}

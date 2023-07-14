@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Planning with Large Language Models for Code Generation"
 image: /images/code-mcts.png
 categories: research
