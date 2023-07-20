@@ -23,6 +23,10 @@ a:hover {
   text-decoration: none;
 }
 
+body {
+  color: #202124; /* Google Plus Black */
+}
+
 body,
 td,
 th,
@@ -71,7 +75,10 @@ h1 {
   margin-block-end: 14px;
   margin-left: 0px;
   margin-right: 0px;
+}
 
+h1, h2, h3 {
+  color: #000000;
 }
 
 .one {
@@ -93,10 +100,6 @@ h1 {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
 }
 
 .tag {
