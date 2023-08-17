@@ -78,7 +78,7 @@ permalink: /cv/
 
 ### **Conference Reviewer**
 
-* IEEE ITSC 2014, AAAI 2019, AISTATS 2023, CVPR 2023, ICML 2023, NeurIPS 2023.
+* IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023, NeurIPS 2023.
 
 
 ## Skills
