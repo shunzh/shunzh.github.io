@@ -12,4 +12,4 @@ code:
 ---
 
 When used for planning, diffusion models generate complete plans at once without incorporating new observations during the execution.
-Our algorithm determines when it is necessary to replan, and replans efficiently.
+Our algorithm determines when it is necessary to replan with new observations, and replans efficiently.

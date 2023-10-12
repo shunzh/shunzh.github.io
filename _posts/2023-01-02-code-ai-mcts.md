@@ -16,6 +16,6 @@ slides: "/pdfs/Code_AI_ICLR.pdf"
 website: "https://codeaimcts.github.io/"
 code: "https://github.com/shunzh/Code-AI-Tree-Search"
 ---
-Combining Monte-Carlo tree search wth the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline.
+Our algorithm combines Monte-Carlo tree search wth the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline.
 
 <!-- Also presented at the _Foundation Models for Decision Making Workshop_ at _NeurIPS_, 2022. -->

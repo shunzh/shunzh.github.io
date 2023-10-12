@@ -10,7 +10,7 @@ permalink: /cv/
 - <i class="fas fa-globe"></i>  [shunzh.github.io](http://shunzh.github.io/)
 - <i class="fas fa-map-marker-alt"></i>  San Francisco Bay Area
 
-**Research interests:** Reinforcement learning; large language models; automatic code generation.
+**Research interests:** Reinforcement learning; large language models; automatic code generation; value alignment.
 
 ## Experience
 
@@ -40,7 +40,7 @@ permalink: /cv/
 
 ### <span>**M.S. in Computer Science**, _University of Texas at Austin_</span> <span>Aug. 2015</span>
 
-- Master Thesis: Parameterized Modular Inverse Reinforcement Learning
+- Master thesis: Parameterized Modular Inverse Reinforcement Learning
 - Committee members: Dana Ballard, Peter Stone
 
 ### <span>**B.S. in Computer Science**, _University of Texas at Austin_</span> <span>May 2014</span>
@@ -60,12 +60,12 @@ permalink: /cv/
 <br>
 <em>{{ post.venue }}</em>
 <br>
-{% if post.paper contains '://' %}
-    {% assign absoluteUrl = post.paper %}
-{% else %}
-    {% assign absoluteUrl = site.homepage_url | append: post.paper %}
-{% endif %}
 {% if post.paper %}
+    {% if post.paper contains '://' %}
+        {% assign absoluteUrl = post.paper %}
+    {% else %}
+        {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+    {% endif %}
     <a href="{{ absoluteUrl }}">paper</a>
 {% endif %}
 </p></li>
