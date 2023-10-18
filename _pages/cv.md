@@ -16,7 +16,7 @@ permalink: /cv/
 
 ### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
-- Research and publish academic papers on **reinforcement learning** and **large language models**, with a focus on the applications of competitive-level code generation and AI for electric circuit design automation.
+- Research and publish academic papers on **reinforcement learning** and **large language models**, with a focus on competitive-level code generation, reinforcement learning from human feedback, and AI for electric circuit design automation.
 
 ### <span>**Graduate Research Assistant**, _University of Michigan_ (Ann Arbor, MI)</span> <span>Sep. 2015 - Apr. 2020</span>
 
