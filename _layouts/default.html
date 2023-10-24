@@ -50,8 +50,9 @@
           </tr>
         </table>
 
-        <div style="padding:0 2.5%;">
+        <div style="padding:1% 2.5%;">
         <span id="toggleText">▼ Show research overview diagram</span>
+        <span id="viewWarning">(best viewed on wider screens)</span>
         {% include diagram.html %}
         </div>
 
@@ -146,22 +147,23 @@
 
 <script>
 // When the window hash changes
-window.onhashchange = function() {
-    // Get the current hash value (without the # symbol)
-    const hash = window.location.hash.substring(1);
-
-    // If there's a matching element with that ID
-    const elem = document.getElementById(hash);
+function handleHashChange(hash) {
+    const elem = document.querySelector(hash);
     if (elem) {
         // Add the highlighted class
         elem.classList.add('highlighted');
 
-        // After 0.5 seconds (500 milliseconds), remove the highlighted class to initiate the fade-out
         setTimeout(() => {
             elem.classList.remove('highlighted');
         }, 500);
     }
 };
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(event) {
+    handleHashChange(event.target.getAttribute("href"));
+  });
+});
 </script>
 </body>
 

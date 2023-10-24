@@ -126,9 +126,16 @@ h1, h2, h3 {
   font-size: small;
 }
 
+#viewWarning {
+  display: none;
+}
+
 @media (max-width: 800px) {
   #research td {
     border-bottom: 1px solid #ccc;
+  }
+  #viewWarning {
+    display: inline;
   }
 }
 
@@ -147,11 +154,12 @@ tr {
 
 // Research overview diagram
 #diagram {
-  width: 750px; /* or whatever size you prefer */
+  width: 100%;
+  max-width: 700px; /* or whatever size you prefer */
   height: 400px;
   position: relative; /* This allows child elements to be positioned absolutely relative to this container */
   background-image: url('images/diagram.png');
-  background-position: calc(50% - 10px) calc(50% + 28px);
+  background-position: calc(50% - 10px) calc(50% + 20px);
   background-size: 85%; /* Scale the image to fit the div while maintaining its aspect ratio */
   background-repeat: no-repeat;
   transition: opacity 0.2s ease;
