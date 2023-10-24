@@ -158,7 +158,7 @@ tr {
   max-width: 700px; /* or whatever size you prefer */
   height: 400px;
   position: relative; /* This allows child elements to be positioned absolutely relative to this container */
-  background-image: url('images/diagram.png');
+  background-image: url('images/diagram.svg');
   background-position: calc(50% - 10px) calc(50% + 20px);
   background-size: 85%; /* Scale the image to fit the div while maintaining its aspect ratio */
   background-repeat: no-repeat;
