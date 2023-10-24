@@ -132,18 +132,57 @@ h1, h2, h3 {
   }
 }
 
-#researchDiagram {
-  width: 700px;
-  max-width: 100%;
-  padding: 10px 0;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+#toggleText {
+  cursor: pointer;
+}
+
+tr {
+  background-color: transparent; /* Set an initial state */
+  transition: background-color 0.5s ease; /* Apply the transition here */
+}
+
+.highlighted {
+  background-color: #FFD700;
+}
+
+// Research overview diagram
+#diagram {
+  width: 750px; /* or whatever size you prefer */
+  height: 400px;
+  position: relative; /* This allows child elements to be positioned absolutely relative to this container */
+  background-image: url('images/diagram.png');
+  background-position: calc(50% - 10px) calc(50% + 28px);
+  background-size: 85%; /* Scale the image to fit the div while maintaining its aspect ratio */
+  background-repeat: no-repeat;
+  transition: opacity 0.2s ease;
+  opacity: 0;  /* Initially set opacity to 0 */
   display: none;
 }
 
-#toggleText {
-  cursor: pointer;
+.textbox {
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white for readability */
+  border: 1px solid black;
+  border-radius: 5px; /* Rounded corners */
+}
+
+#box1 {
+  top: 5%; /* Adjust as needed */
+  left: 35%;
+  width: 30%;
+}
+
+#box2 {
+  top: 55%;
+  left: 1%;
+  width: 30%;
+}
+
+#box3 {
+  top: 55%;
+  right: 1%;
+  width: 30%;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

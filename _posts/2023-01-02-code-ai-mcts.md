@@ -1,5 +1,6 @@
 ---
 title:  "Planning with Large Language Models for Code Generation"
+shortname: ZCS23
 image: /images/code-mcts.png
 categories: research
 tags: [large language model, planning]

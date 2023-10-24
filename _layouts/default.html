@@ -52,12 +52,12 @@
 
         <div style="padding:0 2.5%;">
         <span id="toggleText">▼ Show research overview diagram</span>
-        <img id="researchDiagram" src="/images/research_diagram.png" alt="research diagram">
+        {% include diagram.html %}
         </div>
 
         <script>
           const toggleText = document.getElementById("toggleText");
-          const myImage = document.getElementById("researchDiagram");
+          const myImage = document.getElementById("diagram");
         
           let isImageVisible = false;
         
@@ -72,7 +72,7 @@
               myImage.style.display = "block";
               setTimeout(() => {
                 myImage.style.opacity = 1;
-              }, 10);
+              }, 20);
               toggleText.textContent = "▲ Hide research overview diagram";
             }
             isImageVisible = !isImageVisible;
@@ -83,7 +83,11 @@
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
+          {% if post.shortname %}
+          <tr id="{{post.shortname}}">
+          {% else %}
           <tr>
+          {% endif %}
             <td style="padding:2.5%;width:32%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -140,7 +144,25 @@
     </tr>
   </table>
 
+<script>
+// When the window hash changes
+window.onhashchange = function() {
+    // Get the current hash value (without the # symbol)
+    const hash = window.location.hash.substring(1);
 
+    // If there's a matching element with that ID
+    const elem = document.getElementById(hash);
+    if (elem) {
+        // Add the highlighted class
+        elem.classList.add('highlighted');
+
+        // After 0.5 seconds (500 milliseconds), remove the highlighted class to initiate the fade-out
+        setTimeout(() => {
+            elem.classList.remove('highlighted');
+        }, 500);
+    }
+};
+</script>
 </body>
 
 </html>
