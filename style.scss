@@ -81,35 +81,10 @@ h1, h2, h3 {
   color: #000000;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
 .tag {
   background-color: #f2f2f2;
   color: #444444;
   padding: 0 6px;
-}
-
-.star {
-  color: #FF6600;
 }
 
 /* Prevent hyperlink style change for the 'author' class */
@@ -150,47 +125,6 @@ tr {
 
 .highlighted {
   background-color: #FFD700;
-}
-
-// Research overview diagram
-#diagram {
-  width: 100%;
-  max-width: 700px; /* or whatever size you prefer */
-  height: 400px;
-  position: relative; /* This allows child elements to be positioned absolutely relative to this container */
-  background-image: url('images/diagram.svg');
-  background-position: calc(50% - 10px) calc(50% + 20px);
-  background-size: 85%; /* Scale the image to fit the div while maintaining its aspect ratio */
-  background-repeat: no-repeat;
-  transition: opacity 0.2s ease;
-  opacity: 0;  /* Initially set opacity to 0 */
-  display: none;
-}
-
-.textbox {
-  position: absolute;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white for readability */
-  border: 1px solid black;
-  border-radius: 5px; /* Rounded corners */
-}
-
-#box1 {
-  top: 5%; /* Adjust as needed */
-  left: 35%;
-  width: 30%;
-}
-
-#box2 {
-  top: 55%;
-  left: 1%;
-  width: 30%;
-}
-
-#box3 {
-  top: 55%;
-  right: 1%;
-  width: 30%;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

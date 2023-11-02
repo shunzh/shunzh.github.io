@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="/diagram.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -146,7 +147,7 @@
   </table>
 
 <script>
-// When the window hash changes
+// Handle clicks on paper links in research overview
 function handleHashChange(hash) {
     const elem = document.querySelector(hash);
     if (elem) {
