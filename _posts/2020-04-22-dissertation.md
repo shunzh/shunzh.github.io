@@ -3,7 +3,8 @@ title: "Efficiently Finding Approximately-Optimal Queries for Improving Policies
 image: /images/dissertation.png
 categories: research
 tags: [value alignment, planning under uncertainty]
-venue: "Ph.D. Dissertation, 2020"
+venue: "Ph.D. Dissertation"
+year: 2020
 authors: 
   - Shun Zhang
 paper: "https://drive.google.com/file/d/1CFpapF2MPD02sX9rKfbtZcGiuHCm1ea5/view?usp=sharing"

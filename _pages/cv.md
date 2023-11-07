@@ -58,7 +58,7 @@ permalink: /cv/
 <br>
 {% include list_authors.html authors=post.authors enable_links=false %}
 <br>
-<em>{{ post.venue }}</em>
+<em>{{ post.venue }}</em>, {{ post.year }}
 <br>
 {% if post.paper %}
     {% if post.paper contains '://' %}

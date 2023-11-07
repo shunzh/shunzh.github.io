@@ -3,7 +3,8 @@ title: Adaptive Online Replanning with Diffusion Models
 image: /images/diffusion.png
 categories: research
 tags: [diffusion model, planning]
-venue: Conference on Neural Information Processing Systems (NeurIPS), 2023
+venue: Conference on Neural Information Processing Systems (NeurIPS)
+year: 2023
 authors: [Siyuan Zhou, Yilun Du, Shun Zhang, Mengdi Xu, Yikang Shen, Wei Xiao, Dit-Yan Yeung, Chuang Gan]
 paper: https://arxiv.org/abs/2310.09629
 slides: 

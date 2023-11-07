@@ -1,10 +1,10 @@
 ---
 title:  "Planning with Large Language Models for Code Generation"
-shortname: ZCS23
 image: /images/code-mcts.png
 categories: research
 tags: [large language model, planning]
-venue: "International Conference on Learning Representations (ICLR), 2023"
+venue: "International Conference on Learning Representations (ICLR)"
+year: 2023
 authors:
   - Shun Zhang
   - Zhenfang Chen
