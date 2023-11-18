@@ -85,7 +85,11 @@
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
           {% for post in site.posts %}
           {% if post.categories contains 'research' and post.image %}
-          {% capture current_shortname %}{% include shortname.html authors=post.authors year=post.year %}{% endcapture %}
+          {% if post.shortname %}
+            {% assign shortname = post.shortname %}
+          {% else %}
+            {% capture shortname %}{% include shortname.html authors=post.authors year=post.year %}{% endcapture %}
+          {% endif %}
           <tr id="{{ shortname | strip }}">
             <td style="padding:2.5%;width:32%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
