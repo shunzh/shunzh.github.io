@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="/diagram.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
 {% include ga4.html %}
 </head>
@@ -43,7 +44,7 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table id="research_section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
@@ -147,6 +148,8 @@
     </tr>
   </table>
 
+  <div onclick="topFunction()" id="goBackDiv" title="Go to top"><i class="fa-solid fa-arrow-up"></i> Go to Top</div>
+
 <script>
 // Handle clicks on paper links in research overview
 function handleHashChange(hash) {
@@ -158,6 +161,9 @@ function handleHashChange(hash) {
         setTimeout(() => {
             elem.classList.remove('highlighted');
         }, 500);
+
+        // Display a button to go back
+        document.getElementById("goBackDiv").style.display = "block";
     }
 };
 
@@ -166,6 +172,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     handleHashChange(event.target.getAttribute("href"));
   });
 });
+
+// For the go to top button
+// When the user clicks on the div, scroll to the top of the document
+function topFunction() {
+  document.getElementById('research_section').scrollIntoView()
+  // make the button disappear
+  document.getElementById("goBackDiv").style.display = "none";
+}
+
+// Existing scroll function to show/hide the button
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var goBackDiv = document.getElementById("goBackDiv");
+  var diagramPosition = document.getElementById("research_section").offsetTop; // Get the position of the #diagram element
+  
+  // Check if the div is currently shown and the user scrolls back to or above the #diagram element
+  if (goBackDiv.style.display === "block" && document.documentElement.scrollTop <= diagramPosition) {
+    goBackDiv.style.display = "none"; // Hide the div
+  }
+}
 </script>
 </body>
 

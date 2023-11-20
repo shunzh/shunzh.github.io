@@ -130,3 +130,26 @@ tr {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
+
+#goBackDiv {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the div at the bottom of the page */
+  left: calc(50% + 420px);
+  z-index: 99; /* Make sure it does not overlap */
+  border: 1px solid #000; /* Black border */
+  background-color: #f8f8f8; /* Light grey background */
+  color: #000; /* Black text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 20px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text inside the div */
+}
+
+#goBackDiv:hover {
+  background-color: #e7e7e7; /* Slightly darker grey background on hover */
+}
+
+#goBackDiv i {
+  margin-right: 6px; /* Add right margin to the icon */
+}
