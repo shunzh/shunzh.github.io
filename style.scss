@@ -138,8 +138,8 @@ tr {
   left: calc(50% + 420px);
   z-index: 99; /* Make sure it does not overlap */
   border: 1px solid #000; /* Black border */
-  background-color: #f8f8f8; /* Light grey background */
-  color: #000; /* Black text color */
+  background-color: #4A4A4A; /* Dark Gray/Charcoal background */
+  color: white; /* White text color for contrast */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px 20px; /* Some padding */
   border-radius: 5px; /* Rounded corners */
@@ -147,9 +147,10 @@ tr {
 }
 
 #goBackDiv:hover {
-  background-color: #e7e7e7; /* Slightly darker grey background on hover */
+  background-color: #626262; /* Slightly lighter gray for hover effect */
 }
 
 #goBackDiv i {
   margin-right: 6px; /* Add right margin to the icon */
+  font-size: 1.2em; /* Larger icon size */
 }
