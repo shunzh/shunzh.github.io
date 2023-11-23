@@ -78,16 +78,16 @@ permalink: /cv/
 
 ### **Conference Reviewer**
 
-* IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023, NeurIPS 2023, ICLR 2024.
+IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023, NeurIPS 2023, ICLR 2024.
 
 
 ## Skills
 
 ### **Research**
 
-Reinforcement learning, optimization, deep learning, large language models, active learning, learning and planning under uncertainty.
+Reinforcement learning, convex optimization, deep learning, large language models, active learning, planning under uncertainty.
 
 ### **Programming languages**
 
-Proficient in Python (numpy, PyTorch). Experienced in Java, C++, C, Matlab.
+Proficient in Python (NumPy, PyTorch). Experienced in Java, C++, C, Scheme, Matlab.
 
