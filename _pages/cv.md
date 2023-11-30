@@ -52,7 +52,7 @@ permalink: /cv/
 
 <ul>
 {% for post in site.posts %}
-{% if post.categories contains 'research' %}
+{% if post.categories contains 'paper' %}
 <li><p>
 <strong>{{ post.title }}</strong>
 <br>

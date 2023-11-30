@@ -1,7 +1,7 @@
 ---
 title: "Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety"
 image: /images/dissertation.png
-categories: research
+categories: paper
 tags: [value alignment, planning under uncertainty]
 venue: "Ph.D. Dissertation"
 year: 2020

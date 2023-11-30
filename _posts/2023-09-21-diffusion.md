@@ -1,7 +1,7 @@
 ---
 title: Adaptive Online Replanning with Diffusion Models
 image: /images/diffusion.png
-categories: research
+categories: paper
 tags: [diffusion model, planning]
 venue: Conference on Neural Information Processing Systems (NeurIPS)
 year: 2023

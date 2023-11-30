@@ -1,7 +1,7 @@
 ---
 title:  "Planning with Large Language Models for Code Generation"
 image: /images/code-mcts.png
-categories: research
+categories: paper
 tags: [large language model, planning]
 venue: "International Conference on Learning Representations (ICLR)"
 year: 2023

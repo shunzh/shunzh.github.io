@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="/diagram.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
 {% include ga4.html %}
 </head>
@@ -85,12 +85,13 @@
         <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}
           {% for post in site.posts %}
-          {% if post.categories contains 'research' and post.image %}
-          {% if post.shortname %}
-            {% assign shortname = post.shortname %}
-          {% else %}
-            {% capture shortname %}{% include shortname.html authors=post.authors year=post.year %}{% endcapture %}
-          {% endif %}
+            {% if post.categories contains 'paper' or post.categories contains 'preprint' %}
+              {% if post.image %}
+                {% if post.shortname %}
+                  {% assign shortname = post.shortname %}
+                {% else %}
+                  {% capture shortname %}{% include shortname.html authors=post.authors year=post.year %}{% endcapture %}
+                {% endif %}
           <tr id="{{ shortname | strip }}">
             <td style="padding:2.5%;width:32%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -128,7 +129,8 @@
               {% endif %}
             </td>
           </tr>
-          {% endif %}
+              {% endif %}
+            {% endif %}
           {% endfor %}
         </table>
 

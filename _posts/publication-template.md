@@ -1,7 +1,7 @@
 ---
 title:  
 image: 
-categories: research
+categories: paper
 tags: 
 venue: 
 year: 
