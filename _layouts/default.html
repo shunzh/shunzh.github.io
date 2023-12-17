@@ -53,34 +53,11 @@
         </table>
 
         <div style="padding:1% 2.5%;">
-        <span id="toggleText">▼ Show research overview</span>
-        <span id="viewWarning">(best viewed on wider screens)</span>
-        {% include diagram.html %}
+        <details>
+          <summary><span id="researchOverview">Research Overview</span> <span id="viewWarning">(best viewed on wider screens)</span></summary>
+          {% include diagram.html %}
+        </details>
         </div>
-
-        <script>
-          const toggleText = document.getElementById("toggleText");
-          const myImage = document.getElementById("diagram");
-        
-          let isImageVisible = false;
-        
-          toggleText.addEventListener("click", function() {
-            if (isImageVisible) {
-              myImage.style.opacity = 0;
-              setTimeout(() => {
-                myImage.style.display = "none";
-              }, 0);  // Adjust to match the transition time
-              toggleText.textContent = "▼ Show research overview";
-            } else {
-              myImage.style.display = "block";
-              setTimeout(() => {
-                myImage.style.opacity = 1;
-              }, 20);
-              toggleText.textContent = "▲ Hide research overview";
-            }
-            isImageVisible = !isImageVisible;
-          });
-        </script>
 
         <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% comment %} Print everything in research category which has a image (otherwise assume we want to hide it). {% endcomment %}

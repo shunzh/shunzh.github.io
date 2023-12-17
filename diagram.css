@@ -7,9 +7,6 @@
   background-position: calc(50% - 10px) calc(50% + 20px);
   background-size: 85%; /* Scale the image to fit the div while maintaining its aspect ratio */
   background-repeat: no-repeat;
-  transition: opacity 0.2s ease;
-  opacity: 0;  /* Initially set opacity to 0 */
-  display: none;
 }
 
 .textbox {

@@ -113,7 +113,7 @@ h1, h2, h3 {
   }
 }
 
-#toggleText {
+#researchOverview {
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ tr {
 #goBackDiv {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 40px; /* Place the div at the bottom of the page */
+  top: 40px; /* Place the div at the bottom of the page */
   left: calc(50% + 420px);
   z-index: 99; /* Make sure it does not overlap */
   border: 1px solid #000; /* Black border */
