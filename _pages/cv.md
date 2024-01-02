@@ -10,7 +10,7 @@ permalink: /cv/
 - <i class="fas fa-globe"></i>  [shunzh.github.io](http://shunzh.github.io/)
 - <i class="fas fa-map-marker-alt"></i>  San Francisco Bay Area
 
-**Research interests:** Reinforcement learning; large language models; automatic code generation; value alignment.
+**Research interests:** Reinforcement learning; large language models; automated theorem proving; automatic code generation; value alignment.
 
 ## Experience
 
@@ -45,6 +45,43 @@ permalink: /cv/
 
 ### <span>**B.S. in Computer Science**, _University of Texas at Austin_</span> <span>May 2014</span>
 
+{% assign preprints_exist = false %}
+{% for post in site.posts %}
+    {% if post.categories contains 'preprint' %}
+        {% assign preprints_exist = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% if preprints_exist %}
+## Preprints
+
+<p></p>
+
+<ul>
+{% for post in site.posts %}
+    {% if post.categories contains 'preprint' %}
+    <li><p>
+        <strong>{{ post.title }}</strong>
+        <br>
+        {% include list_authors.html authors=post.authors enable_links=false %}
+        <br>
+        <em>{{ post.venue }}</em>, {{ post.year }}
+        <br>
+        {% if post.paper %}
+            {% if post.paper contains '://' %}
+                {% assign absoluteUrl = post.paper %}
+            {% else %}
+                {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+            {% endif %}
+            <a href="{{ absoluteUrl }}">paper</a>
+        {% endif %}
+    </p></li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+
 
 ## Publications
 
@@ -54,20 +91,20 @@ permalink: /cv/
 {% for post in site.posts %}
 {% if post.categories contains 'paper' %}
 <li><p>
-<strong>{{ post.title }}</strong>
-<br>
-{% include list_authors.html authors=post.authors enable_links=false %}
-<br>
-<em>{{ post.venue }}</em>, {{ post.year }}
-<br>
-{% if post.paper %}
-    {% if post.paper contains '://' %}
-        {% assign absoluteUrl = post.paper %}
-    {% else %}
-        {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+    <strong>{{ post.title }}</strong>
+    <br>
+    {% include list_authors.html authors=post.authors enable_links=false %}
+    <br>
+    <em>{{ post.venue }}</em>, {{ post.year }}
+    <br>
+    {% if post.paper %}
+        {% if post.paper contains '://' %}
+            {% assign absoluteUrl = post.paper %}
+        {% else %}
+            {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+        {% endif %}
+        <a href="{{ absoluteUrl }}">paper</a>
     {% endif %}
-    <a href="{{ absoluteUrl }}">paper</a>
-{% endif %}
 </p></li>
 {% endif %}
 {% endfor %}
@@ -78,7 +115,7 @@ permalink: /cv/
 
 ### **Conference Reviewer**
 
-IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023, NeurIPS 2023, ICLR 2024.
+IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023-24, NeurIPS 2023, ICLR 2024.
 
 
 ## Skills
@@ -91,3 +128,10 @@ Reinforcement learning, convex optimization, deep learning, large language model
 
 Proficient in Python (NumPy, PyTorch). Experienced in Java, C++, C, Scheme, Matlab.
 
+
+## Miscellaneous
+
+<p></p>
+
+* Languages: Mandarin Chinese (native), English (professional proficiency).
+* No sponsorship required to work in the United States.
