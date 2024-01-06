@@ -138,22 +138,7 @@ tr {
   top: 40px; /* Place the div at the bottom of the page */
   left: calc(50% + 420px);
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid #000; /* Black border */
-  background-color: #4A4A4A; /* Dark Gray/Charcoal background */
-  color: white; /* White text color for contrast */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px 20px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
   text-align: center; /* Center the text inside the div */
-}
-
-#goBackDiv:hover {
-  background-color: #626262; /* Slightly lighter gray for hover effect */
-}
-
-#goBackDiv i {
-  margin-right: 6px; /* Add right margin to the icon */
-  font-size: 1.2em; /* Larger icon size */
 }
 
 #alphabetic {
