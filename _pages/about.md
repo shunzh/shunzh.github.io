@@ -5,8 +5,7 @@ permalink: /
 ---
 # Shun Zhang
 
-Welcome to the homepage of Shun Zhang (in Simplified Chinese: 张舜)!
-
+Hi! This is Shun Zhang (张舜).
 I am a research scientist at the [MIT-IBM Watson AI Lab](https://mitibmwatsonailab.mit.edu/). My research interests lie in **reinforcement learning**, **large language models**, and **value alignment**.
 
 I received my Ph.D. from the University of Michigan, advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof. [Ed Durfee](https://durfee.engin.umich.edu/).

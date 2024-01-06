@@ -32,6 +32,7 @@
 
               <p style="text-align:center">
                 <a href="mailto:{{ site.email }}"> Email </a> &nbsp;/&nbsp;
+                <a href="/bio"> Bio </a> &nbsp;/&nbsp;
                 <a href="https://github.com/{{ site.github_id }}"> GitHub </a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}"> Google Scholar </a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}"> LinkedIn </a> &nbsp;/&nbsp;
@@ -77,7 +78,10 @@
               <h3>{{post.title}}</h3>
               <br>
               <span class="authors">
-              {% include list_authors.html authors=post.authors enable_links=true %}
+                {% if post.alphabetical %}
+                <span id="alphabetic" title="The authors are listed in alphabetical order."><i class="fa-solid fa-arrow-down-a-z"></i></span>
+                {% endif %}
+                {% include list_authors.html authors=post.authors enable_links=true %}
               </span>
               <br>
               <em>{{post.venue}}</em>, {{post.year}}
