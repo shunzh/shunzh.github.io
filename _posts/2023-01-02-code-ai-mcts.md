@@ -12,7 +12,7 @@ authors:
   - Mingyu Ding
   - Joshua B. Tenenbaum
   - Chuang Gan
-paper: "https://arxiv.org/abs/2303.05510"
+paper: "https://arxiv.org/pdf/2303.05510.pdf"
 slides: "/pdfs/Code_AI_ICLR.pdf"
 website: "https://codeaimcts.github.io/"
 code: "https://github.com/shunzh/Code-AI-Tree-Search"

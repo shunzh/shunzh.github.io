@@ -71,10 +71,10 @@
                   {% capture shortname %}{% include shortname.html authors=post.authors year=post.year %}{% endcapture %}
                 {% endif %}
           <tr id="{{ shortname | strip }}">
-            <td style="padding:2.5%;width:32%;vertical-align:middle;min-width:120px">
+            <td style="padding:3% 2.5%;width:32%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:73%;vertical-align:middle">
+            <td style="padding:3% 2.5%;width:73%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <span class="authors">
@@ -131,7 +131,7 @@
     </tr>
   </table>
 
-  <div id="goBackDiv" title="Back to Overview">
+  <div id="goBackDiv">
     [ <a href="javascript:void(0);" onclick="topFunction()"><i class="fa-solid fa-angle-up"></i> Back to Overview</a> ]
   </div>
 
@@ -161,23 +161,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // For the go to top button
 // When the user clicks on the div, scroll to the top of the document
 function topFunction() {
-  document.getElementById('research_section').scrollIntoView()
+  // Update the window's location hash to scroll to the element
+  window.location.hash = '#research_section';
   // make the button disappear
   document.getElementById("goBackDiv").style.display = "none";
 }
 
 // Existing scroll function to show/hide the button
 window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
   var goBackDiv = document.getElementById("goBackDiv");
-  var diagramPosition = document.getElementById("research_section").offsetTop; // Get the position of the #diagram element
+  var researchSectionPosition = document.getElementById("research_section").offsetTop;
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // Compatibility with different browsers
   
-  // Check if the div is currently shown and the user scrolls back to or above the #diagram element
-  if (goBackDiv.style.display === "block" && document.documentElement.scrollTop <= diagramPosition) {
-    goBackDiv.style.display = "none"; // Hide the div
+  // Hide the button when the user scrolls above the research_section with some threshold (e.g., 10px)
+  if (goBackDiv.style.display === "block" && scrollTop < researchSectionPosition - 10) {
+    goBackDiv.style.display = "none";
   }
 }
 </script>
