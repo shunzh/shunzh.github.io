@@ -6,8 +6,8 @@ permalink: /cv/
 # Shun Zhang
 
 {: #contact}
-- <i class="fas fa-envelope"></i>  [shunzh@umich.edu](mailto:shunzh@umich.edu)
-- <i class="fas fa-globe"></i>  [shunzh.github.io](http://shunzh.github.io/)
+- <i class="fas fa-envelope"></i>  [{{ site.email }}](mailto:{{ site.email }})
+- <i class="fas fa-globe"></i>  [{{ site.homepage_url | remove: 'https://' }}]({{ site.homepage_url }})
 - <i class="fas fa-map-marker-alt"></i>  San Francisco Bay Area
 
 **Research interests:** Reinforcement learning; large language models; automated theorem proving; automatic code generation; value alignment.
@@ -45,43 +45,6 @@ permalink: /cv/
 
 ### <span>**B.S. in Computer Science**, _University of Texas at Austin_</span> <span>May 2014</span>
 
-{% assign preprints_exist = false %}
-{% for post in site.posts %}
-    {% if post.categories contains 'preprint' %}
-        {% assign preprints_exist = true %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-{% if preprints_exist %}
-## Preprints
-
-<p></p>
-
-<ul>
-{% for post in site.posts %}
-    {% if post.categories contains 'preprint' %}
-    <li><p>
-        <strong>{{ post.title }}</strong>
-        <br>
-        {% include list_authors.html authors=post.authors enable_links=false %}
-        <br>
-        <em>{{ post.venue }}</em>, {{ post.year }}
-        <br>
-        {% if post.paper %}
-            {% if post.paper contains '://' %}
-                {% assign absoluteUrl = post.paper %}
-            {% else %}
-                {% assign absoluteUrl = site.homepage_url | append: post.paper %}
-            {% endif %}
-            <a href="{{ absoluteUrl }}">paper</a>
-        {% endif %}
-    </p></li>
-    {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
-
 
 ## Publications
 
@@ -109,6 +72,44 @@ permalink: /cv/
 {% endif %}
 {% endfor %}
 </ul>
+
+
+{% assign preprints_exist = false %}
+{% for post in site.posts %}
+    {% if post.categories contains 'preprint' %}
+        {% assign preprints_exist = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% if preprints_exist %}
+## Preprints
+
+<p></p>
+
+<ul>
+{% for post in site.posts %}
+{% if post.categories contains 'preprint' %}
+<li><p>
+    <strong>{{ post.title }}</strong>
+    <br>
+    {% include list_authors.html authors=post.authors enable_links=false %}
+    <br>
+    <em>{{ post.venue }}</em>, {{ post.year }}
+    <br>
+    {% if post.paper %}
+        {% if post.paper contains '://' %}
+            {% assign absoluteUrl = post.paper %}
+        {% else %}
+            {% assign absoluteUrl = site.homepage_url | append: post.paper %}
+        {% endif %}
+        <a href="{{ absoluteUrl }}">paper</a>
+    {% endif %}
+</p></li>
+{% endif %}
+{% endfor %}
+</ul>
+{% endif %}
 
 
 ## Academic Services
