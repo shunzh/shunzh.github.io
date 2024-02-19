@@ -8,7 +8,7 @@ permalink: /cv/
 {: #contact}
 - <i class="fas fa-envelope"></i>  [{{ site.email }}](mailto:{{ site.email }})
 - <i class="fas fa-globe"></i>  [{{ site.homepage_url | remove: 'https://' }}]({{ site.homepage_url }})
-- <i class="fas fa-map-marker-alt"></i>  San Francisco Bay Area
+- <i class="fas fa-map-marker-alt"></i>  {{ site.location }}
 
 **Research interests:** Reinforcement learning; large language models; automated theorem proving; automatic code generation; value alignment.
 

@@ -131,53 +131,27 @@
     </tr>
   </table>
 
-  <div id="goBackDiv">
-    [ <a href="javascript:void(0);" onclick="topFunction()"><i class="fa-solid fa-angle-up"></i> Back to Overview</a> ]
-  </div>
-
 <script>
-// Handle clicks on paper links in research overview
 function handleHashChange(hash) {
     const elem = document.querySelector(hash);
     if (elem) {
-        // Add the highlighted class
+        elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         elem.classList.add('highlighted');
 
         setTimeout(() => {
             elem.classList.remove('highlighted');
-        }, 500);
-
-        // Display a button to go back
-        document.getElementById("goBackDiv").style.display = "block";
+        }, 1000);
+    } else {
+        console.log(`Element not found: ${hash}`);
     }
 };
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(event) {
-    handleHashChange(event.target.getAttribute("href"));
+    event.preventDefault(); // Prevent the default anchor behavior
+    handleHashChange(event.currentTarget.getAttribute("href"));
   });
 });
-
-// For the go to top button
-// When the user clicks on the div, scroll to the top of the document
-function topFunction() {
-  // Update the window's location hash to scroll to the element
-  window.location.hash = '#research_section';
-  // make the button disappear
-  document.getElementById("goBackDiv").style.display = "none";
-}
-
-// Existing scroll function to show/hide the button
-window.onscroll = function() {
-  var goBackDiv = document.getElementById("goBackDiv");
-  var researchSectionPosition = document.getElementById("research_section").offsetTop;
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // Compatibility with different browsers
-  
-  // Hide the button when the user scrolls above the research_section with some threshold (e.g., 10px)
-  if (goBackDiv.style.display === "block" && scrollTop < researchSectionPosition - 10) {
-    goBackDiv.style.display = "none";
-  }
-}
 </script>
 </body>
 
