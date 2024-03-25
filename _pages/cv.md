@@ -46,13 +46,13 @@ permalink: /cv/
 ### <span>**B.S. in Computer Science**, _University of Texas at Austin_</span> <span>May 2014</span>
 
 
-## Publications
+## Publications and Preprints
 
 <p></p>
 
 <ul>
 {% for post in site.posts %}
-{% if post.categories contains 'paper' %}
+{% if post.categories contains 'paper' or post.categories contains 'preprint' %}
 <li><p>
     <strong>{{ post.title }}</strong>
     <br>
@@ -81,36 +81,6 @@ permalink: /cv/
         {% break %}
     {% endif %}
 {% endfor %}
-
-{% if preprints_exist %}
-## Preprints
-
-<p></p>
-
-<ul>
-{% for post in site.posts %}
-{% if post.categories contains 'preprint' %}
-<li><p>
-    <strong>{{ post.title }}</strong>
-    <br>
-    {% include list_authors.html authors=post.authors enable_links=false %}
-    <br>
-    <em>{{ post.venue }}</em>, {{ post.year }}
-    <br>
-    {% if post.paper %}
-        {% if post.paper contains '://' %}
-            {% assign absoluteUrl = post.paper %}
-        {% else %}
-            {% assign absoluteUrl = site.homepage_url | append: post.paper %}
-        {% endif %}
-        <a href="{{ absoluteUrl }}">paper</a>
-    {% endif %}
-</p></li>
-{% endif %}
-{% endfor %}
-</ul>
-{% endif %}
-
 
 ## Academic Services
 
