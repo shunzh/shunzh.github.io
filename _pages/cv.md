@@ -14,9 +14,13 @@ permalink: /cv/
 
 ## Experience
 
-### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Present<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
+### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Present</span>
 
-- Research and publish papers on **reinforcement learning** and **large language models**, with a focus on competitive-level code generation, reinforcement learning from human feedback, and AI for electric circuit design automation.
+- Building AI that plans, abstracts, verifies, and discovers new skills and knowledge.
+
+### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Jun. 2024<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
+
+- Conducted research and published papers on **reinforcement learning** and **large language models**, with a focus on competitive-level code generation, reinforcement learning from human feedback, and AI for scientific discovery.
 
 ### <span>**Graduate Research Assistant**, _University of Michigan_ (Ann Arbor, MI)</span> <span>Sep. 2015 - Apr. 2020</span>
 
