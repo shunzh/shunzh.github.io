@@ -75,7 +75,12 @@
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:3% 2.5%;width:73%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <h3>
+                {% if post.star %}
+                <span class="star"><i class="fa-solid fa-star" style="color: gold;" title="Featured work"></i></span>
+                {% endif %}
+                {{post.title}}
+              </h3>
               <br>
               <span class="authors">
                 {% if post.alphabetical %}

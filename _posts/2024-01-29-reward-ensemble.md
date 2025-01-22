@@ -1,5 +1,5 @@
 ---
-title: Improving Reinforcement Learning from Human Feedback with Efficient Reward Model Ensemble (Short Paper)
+title: Improving Reinforcement Learning from Human Feedback with Efficient Reward Model Ensemble
 image: images/reward-ensemble.png
 categories: preprint
 tags: [large language model, value alignment]

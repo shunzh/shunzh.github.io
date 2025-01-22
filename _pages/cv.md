@@ -14,7 +14,7 @@ permalink: /cv/
 
 ## Experience
 
-### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Present</span>
+### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Jan. 2025</span>
 
 - Building AI that plans, abstracts, verifies, and discovers new skills and knowledge.
 
