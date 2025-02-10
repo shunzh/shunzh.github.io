@@ -10,22 +10,18 @@ permalink: /cv/
 - <i class="fas fa-globe"></i>  [{{ site.homepage_url | remove: 'https://' }}]({{ site.homepage_url }})
 - <i class="fas fa-map-marker-alt"></i>  {{ site.location }}
 
-**Research interests:** Reinforcement learning; large language models; automated theorem proving; automatic code generation; value alignment.
+**Research interests:** Reinforcement learning; large language models; code generation and reasoning; value alignment; artificial general intelligence.
 
 ## Experience
 
 ### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Jan. 2025</span>
 
-- Building AI that plans, abstracts, verifies, and discovers new skills and knowledge.
+- Worked on building an **AI agent** that plans, abstracts, verifies, and discovers new skills and knowledge.
+- Proposed and implemented technical plans to achieve project milestones.
 
 ### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Jun. 2024<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
 - Conducted research and published papers on **reinforcement learning** and **large language models**, with a focus on competitive-level code generation, reinforcement learning from human feedback, and AI for scientific discovery.
-
-### <span>**Graduate Research Assistant**, _University of Michigan_ (Ann Arbor, MI)</span> <span>Sep. 2015 - Apr. 2020</span>
-
-- Conducted research and published papers on **preference elicitation** and **AI safety in reinforcement learning**.
-- Designed active learning algorithms to improve a learning agent's performance and guarantee safety in domains with uncertain objectives.
 
 ### <span>**Software Development Engineer Intern**, _Amazon_ (Seattle, WA)</span> <span>Jun. - Aug. 2014</span>
 
@@ -39,6 +35,7 @@ permalink: /cv/
 
 ### <span>**Ph.D. in Computer Science and Engineering**, _University of Michigan_</span> <span>Sep. 2015 - Apr. 2020</span>
 
+- Research on **reward learning** and **AI safety** in **reinforcement learning**.
 - Dissertation: Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety
 - Advisors: Satinder Singh, Edmund H. Durfee
 
@@ -97,11 +94,11 @@ IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023-24, NeurIPS 202
 
 ### **Research**
 
-Reinforcement learning, convex optimization, deep learning, large language models, active learning, planning under uncertainty.
+Reinforcement learning, deep learning, large language models, active learning, convex optimization, planning and learning under uncertainty.
 
 ### **Programming languages**
 
-Proficient in Python (NumPy, PyTorch). Experienced in Java, C++, C, Scheme, Matlab.
+Proficient in Python (NumPy, PyTorch). Experienced in Java, C++, C, Matlab, SQL.
 
 
 ## Miscellaneous
