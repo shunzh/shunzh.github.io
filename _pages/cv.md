@@ -21,7 +21,7 @@ permalink: /cv/
 
 ### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Jun. 2024<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
-- Conducted research and published papers on **reinforcement learning** and **large language models**, with a focus on competitive-level code generation, reinforcement learning from human feedback, and AI for scientific discovery.
+- Conducted research and published papers on **reinforcement learning** and **large language models**, with a focus on competition-level code generation, reinforcement learning from human feedback, and AI for scientific discovery.
 
 ### <span>**Software Development Engineer Intern**, _Amazon_ (Seattle, WA)</span> <span>Jun. - Aug. 2014</span>
 

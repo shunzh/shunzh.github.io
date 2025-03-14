@@ -54,7 +54,7 @@
 
         <div style="padding:1.5% 2.5%;">
         <details>
-          <summary><span id="researchOverview">Research Overview</span> <span id="viewWarning">(best viewed on wider screens)</span></summary>
+          <summary><span id="researchOverview">Research Overview <span id="toggleState">(click to expand)</span> <span id="viewWarning">(best viewed on wider screens)</span></span></summary>
           {% include diagram.html %}
         </details>
         </div>
@@ -155,6 +155,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     event.preventDefault(); // Prevent the default anchor behavior
     handleHashChange(event.currentTarget.getAttribute("href"));
   });
+});
+
+// Add details toggle handler
+document.querySelector('details').addEventListener('toggle', function(e) {
+    const toggleState = document.getElementById('toggleState');
+    if (e.target.open) {
+        toggleState.textContent = '(click to collapse)';
+    } else {
+        toggleState.textContent = '(click to expand)';
+    }
 });
 </script>
 </body>
