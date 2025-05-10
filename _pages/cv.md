@@ -16,8 +16,7 @@ permalink: /cv/
 
 ### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Jan. 2025</span>
 
-- Worked on building an **AI agent** that plans, abstracts, verifies, and discovers new skills and knowledge.
-- Proposed and implemented technical plans to achieve project milestones.
+- Developed an **AI agent** that plans, verifies, and discovers new skills and knowledge.
 
 ### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Jun. 2024<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
@@ -74,14 +73,6 @@ permalink: /cv/
 {% endfor %}
 </ul>
 
-
-{% assign preprints_exist = false %}
-{% for post in site.posts %}
-    {% if post.categories contains 'preprint' %}
-        {% assign preprints_exist = true %}
-        {% break %}
-    {% endif %}
-{% endfor %}
 
 ## Academic Services
 
