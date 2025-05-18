@@ -18,6 +18,6 @@ website: "https://codeaimcts.github.io/"
 code: "https://github.com/shunzh/Code-AI-Tree-Search"
 star: true
 ---
-Our algorithm combines Monte-Carlo tree search wth the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline.
+Our algorithm combines Monte-Carlo tree search with the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline.
 
 <!-- Also presented at the _Foundation Models for Decision Making Workshop_ at _NeurIPS_, 2022. -->
