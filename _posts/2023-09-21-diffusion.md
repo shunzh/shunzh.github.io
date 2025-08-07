@@ -8,8 +8,8 @@ year: 2023
 authors: [Siyuan Zhou, Yilun Du, Shun Zhang, Mengdi Xu, Yikang Shen, Wei Xiao, Dit-Yan Yeung, Chuang Gan]
 paper: https://arxiv.org/pdf/2310.09629.pdf
 slides: 
-website: https://vis-www.cs.umass.edu/replandiffuser/
-code: 
+website: 
+code: https://github.com/rainbow979/replandiffuser
 ---
 
 When used for planning, diffusion models generate complete plans at once without incorporating new observations during the execution.

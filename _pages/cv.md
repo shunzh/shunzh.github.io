@@ -20,7 +20,7 @@ permalink: /cv/
 
 ### <span>**Research Scientist**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _MIT-IBM Watson AI Lab_<br>**Postdoctoral Researcher**, _IBM-NJIT_</span> <span style="text-align: right;">Jun. 2022 - Jun. 2024<br>Oct. 2021 - Jun. 2022<br>Aug. 2020 - Oct. 2021</span>
 
-- Conducted research and published papers on **reinforcement learning** and **large language models**, with a focus on competition-level code generation, reinforcement learning from human feedback, and AI for scientific discovery.
+- Conducted research and published papers on **reinforcement learning** and **post-training of language models**, with a focus on code generation, reinforcement learning from human feedback, and AI for scientific discovery.
 
 ### <span>**Software Development Engineer Intern**, _Amazon_ (Seattle, WA)</span> <span>Jun. - Aug. 2014</span>
 
@@ -34,7 +34,7 @@ permalink: /cv/
 
 ### <span>**Ph.D. in Computer Science and Engineering**, _University of Michigan_</span> <span>Sep. 2015 - Apr. 2020</span>
 
-- Research on **reward learning** and **AI safety** in **reinforcement learning**.
+- Research on **value alignment** and **AI safety** in **reinforcement learning**.
 - Dissertation: Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety
 - Advisors: Satinder Singh, Edmund H. Durfee
 
@@ -78,23 +78,15 @@ permalink: /cv/
 
 ### **Conference Reviewer**
 
-IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023-24, NeurIPS 2023-24, ICLR 2024-25.
+IEEE ITSC 2014, AAAI 2019, AISTATS 2023-24, CVPR 2023, ICML 2023-24, NeurIPS 2023-25, ICLR 2024-25.
 
 
 ## Skills
 
 ### **Research**
 
-Reinforcement learning, deep learning, large language models, active learning, convex optimization, planning and learning under uncertainty.
+Reinforcement learning, deep learning, language models, active learning, convex optimization, planning and learning under uncertainty.
 
 ### **Programming languages**
 
 Proficient in Python (NumPy, PyTorch). Experienced in Java, C++, C, Matlab, SQL.
-
-
-## Miscellaneous
-
-<p></p>
-
-* Languages: Mandarin Chinese (native), English (professional proficiency).
-* No sponsorship required to work in the United States.

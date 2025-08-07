@@ -9,7 +9,7 @@ authors: [Shun Zhang, Zhenfang Chen, Sunli Chen, Yikang Shen, Zhiqing Sun, Chuan
 paper: https://arxiv.org/pdf/2401.16635.pdf
 slides: 
 website: 
-code: 
+code: https://github.com/shunzh/alpaca-farm-ensemble-reward
 ---
 We introduce efficient reward model ensemble approaches for reinforcement learning from human feedback (RLHF),
 achieving better alignment with human values under computational constraints.
