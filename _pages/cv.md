@@ -15,7 +15,7 @@ permalink: /cv/
 ## Experience
 ### <span>**Senior Generative AI Engineer**, _NVIDIA_ (Santa Clara, CA)</span> <span>Aug. 2025 - Present</span>
 
-- Post-training of foundation models.
+- Post-training of multimodal foundation models.
 
 ### <span>**Founding Member of Technical Staff**, _Asari AI_ (San Francisco, CA)</span> <span>Jun. 2024 - Jan. 2025</span>
 

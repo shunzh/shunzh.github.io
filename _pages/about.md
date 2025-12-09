@@ -6,7 +6,7 @@ permalink: /
 # Shun Zhang
 
 Hi! This is Shun Zhang (张舜).
-I am a senior GenAI engineer at [NVIDIA](https://www.nvidia.com/en-us/).
+I am a senior GenAI engineer on the [NVIDIA Cosmos team](https://www.nvidia.com/en-us/ai/cosmos/).
 My research interests lie in **reinforcement learning** and **language models**.
 
 I received my Ph.D. from the University of Michigan, advised by Prof. [Satinder Singh](https://web.eecs.umich.edu/~baveja/) and Prof. [Ed Durfee](https://durfee.engin.umich.edu/).
