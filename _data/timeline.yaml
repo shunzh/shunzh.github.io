@@ -1,0 +1,45 @@
+- type: experience
+  title: Senior Generative AI Engineer
+  organization: NVIDIA
+  location: Santa Clara, CA
+  start_date: Aug 2025
+  end_date: Present
+  description: Post-training of vision language models.
+
+- type: experience
+  title: Founding Member of Technical Staff
+  organization: Asari AI
+  location: San Francisco, CA
+  start_date: Jun 2024
+  end_date: Jan 2025
+  description: Developed an AI agent that plans, verifies, and discovers new skills and knowledge.
+
+- type: experience
+  title: Research Scientist
+  organization: MIT-IBM Watson AI Lab
+  start_date: Jun 2022
+  end_date: Jun 2024
+  description: Research on reinforcement learning and post-training of language models, with a focus on code generation and reinforcement learning from human feedback.
+
+- type: experience
+  title: Postdoctoral Researcher
+  organization: IBM Research
+  start_date: Aug 2020
+  end_date: Jun 2022
+  description: Research on meta-reinforcement learning and AI for scientific discovery.
+
+- type: education
+  title: Ph.D. in Computer Science and Engineering
+  organization: University of Michigan
+  location: Ann Arbor, MI
+  start_date: Sep 2015
+  end_date: Apr 2020
+  advisors: "Advisors: [Prof. Satinder Singh](https://web.eecs.umich.edu/~baveja/) and [Prof. Ed Durfee](https://durfee.engin.umich.edu/)."
+  description: "Research on value alignment and AI safety in reinforcement learning."
+
+- type: education
+  title: B.S. and M.S. in Computer Science
+  organization: University of Texas at Austin
+  location: Austin, TX
+  end_date: Aug 2015
+  advisors: "Undergraduate/master research advisors: [Prof. Peter Stone](https://www.cs.utexas.edu/~pstone/) and [Prof. Dana Ballard](https://www.cs.utexas.edu/~dana/)."

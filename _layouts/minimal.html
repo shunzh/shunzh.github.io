@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <title>{{ page.title | default: site.name }}'s Homepage</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.homepage_url }}">
+  
+  {% include ga4.html %}
+</head>
+<body>
+  <div class="container py-4 py-md-5 px-3 px-md-4" style="max-width: 900px;">
+    <div class="text-center mb-4 mb-md-5 pb-3 pb-md-4 header-section">
+      <img src="{{ site.avatar }}" alt="Shun Zhang" class="rounded-circle mb-3 mb-md-4 profile-image">
+      <h1 class="display-6 display-md-5 fw-normal mb-2 heading-primary">{{ site.name }}</h1>
+      <p class="lead mb-3 mb-md-4 text-subtitle">{{ site.description }}</p>
+      <div class="d-flex justify-content-center flex-wrap gap-1 gap-md-2 small">
+        <a href="mailto:{{ site.email }}">Email</a>
+        <span class="text-muted">/</span>
+        <a href="https://github.com/{{ site.github_id }}">GitHub</a>
+        <span class="text-muted">/</span>
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">Google Scholar</a>
+        <span class="text-muted">/</span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}">LinkedIn</a>
+        <span class="text-muted">/</span>
+        <a href="{{ site.homepage_url }}/rethink">Rethink (Blog)</a>
+      </div>
+    </div>
+
+    {% assign about_page = site.pages | where: "path", "_pages/about.md" | first %}
+    {% if about_page %}
+    <div class="mb-4 mb-md-5 intro-section">
+      {{ about_page.content | markdownify }}
+    </div>
+    {% endif %}
+
+    <div class="mb-4 mb-md-5">
+      <h2 class="h5 fw-normal mb-3 mb-md-4 pb-2 section-header">CAREER TIMELINE</h2>
+      
+      <div class="timeline">
+        {% for item in site.data.timeline %}
+        <div class="timeline-item position-relative mb-3 mb-md-4">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content ms-3 ms-md-4">
+            <div class="mb-2">
+              <p class="small mb-1 timeline-date">{% if item.start_date %}{{ item.start_date }}{% if item.end_date %} - {{ item.end_date }}{% endif %}{% elsif item.end_date %}{{ item.end_date }}{% endif %}</p>
+              <h3 class="h6 fw-normal mb-1 timeline-title">{{ item.title }}</h3>
+              <p class="small fst-italic mb-1 timeline-organization">{{ item.organization }}</p>
+              {% if item.location %}
+              <p class="small mb-0 timeline-location">{{ item.location }}</p>
+              {% endif %}
+            </div>
+            {% if item.advisors %}
+            <div class="small mt-2 timeline-description">
+              {{ item.advisors | markdownify }}
+            </div>
+            {% endif %}
+            {% if item.description %}
+            <div class="small mt-2 timeline-description">
+              {{ item.description | markdownify }}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="mb-4 mb-md-5">
+      <h2 class="h5 fw-normal mb-3 mb-md-4 pb-2 section-header">SELECTED PUBLICATIONS</h2>
+      
+      {% assign selected_pubs = site.data.publications | where: "selected", true %}
+      {% if selected_pubs.size == 0 %}
+        {% assign selected_pubs = site.data.publications | sort: "year" | reverse | limit: 5 %}
+      {% endif %}
+      
+      {% for pub in selected_pubs %}
+      <div class="mb-3 mb-md-4 pb-3 pb-md-4 publication-item{% if forloop.last %} publication-item-last{% endif %}">
+        <h3 class="h6 fw-bold mb-2 publication-title">
+          {{ pub.title }}
+        </h3>
+        <p class="small mb-1 text-authors">
+          {% include list_authors.html authors=pub.authors enable_links=true %}
+        </p>
+        <p class="small fst-italic mb-2 text-venue">{{ pub.venue }}, {{ pub.year }}</p>
+        <div class="d-flex flex-wrap gap-2">
+          {% if pub.paper %}
+            <a href="{{ pub.paper }}" target="_blank" rel="noopener noreferrer" class="link-small">paper</a>
+          {% endif %}
+          {% if pub.slides %}
+            <a href="{{ pub.slides }}" target="_blank" rel="noopener noreferrer" class="link-small">slides</a>
+          {% endif %}
+          {% if pub.poster %}
+            <a href="{{ pub.poster }}" target="_blank" rel="noopener noreferrer" class="link-small">poster</a>
+          {% endif %}
+          {% if pub.website %}
+            <a href="{{ pub.website }}" target="_blank" rel="noopener noreferrer" class="link-small">website</a>
+          {% endif %}
+          {% if pub.code %}
+            <a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer" class="link-small">code</a>
+          {% endif %}
+        </div>
+        {% if pub.excerpt %}
+        <div class="mt-2 small publication-excerpt">
+          {{ pub.excerpt }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      
+      <div class="text-center mt-4 mt-md-5 pt-3 pt-md-4 footer-section">
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" target="_blank" rel="noopener noreferrer" class="small">
+          View complete publication list on Google Scholar →
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Change title for print
+    window.addEventListener('beforeprint', function() {
+      document.title = '{{ site.name }}';
+    });
+    window.addEventListener('afterprint', function() {
+      document.title = '{{ site.name }}\'s Homepage';
+    });
+  </script>
+</body>
+</html>

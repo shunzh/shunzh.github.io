@@ -1,0 +1,170 @@
+- title: "Improving Reinforcement Learning from Human Feedback with Efficient Reward Model Ensemble"
+  authors: [Shun Zhang, Zhenfang Chen, Sunli Chen, Yikang Shen, Zhiqing Sun, Chuang Gan]
+  venue: arXiv
+  year: 2024
+  category: preprint
+  paper: https://arxiv.org/pdf/2401.16635.pdf
+  code: https://github.com/shunzh/alpaca-farm-ensemble-reward
+  image: images/reward-ensemble.png
+  tags: [large language model, value alignment]
+  selected: true
+  excerpt: "We introduce efficient reward model ensemble approaches for reinforcement learning from human feedback (RLHF), achieving better alignment with human values under computational constraints."
+
+- title: "LaMAGIC: Language-Model-based Topology Generation for Analog Integrated Circuits"
+  authors: [Chen-Chia Chang, Yikang Shen, Shaoze Fan, Jing Li, Shun Zhang, Ningyuan Cao, Yiran Chen, Xin Zhang]
+  venue: International Conference on Machine Learning (ICML)
+  year: 2024
+  category: paper
+  paper: https://arxiv.org/pdf/2407.18269
+
+- title: "Graph-Transformer-based Surrogate Model for Accelerated Converter Circuit Topology Design"
+  authors: [Shaoze Fan, Haoshu Lu, Shun Zhang, Ningyuan Cao, Xin Zhang, Jing Li]
+  venue: Design Automation Conference (DAC)
+  year: 2024
+  category: paper
+  paper: "/pdfs/fan-dac-2024.pdf"
+
+- title: "Adaptive Online Replanning with Diffusion Models"
+  authors: [Siyuan Zhou, Yilun Du, Shun Zhang, Mengdi Xu, Yikang Shen, Wei Xiao, Dit-Yan Yeung, Chuang Gan]
+  venue: Conference on Neural Information Processing Systems (NeurIPS)
+  year: 2023
+  category: paper
+  paper: https://arxiv.org/pdf/2310.09629.pdf
+  code: https://github.com/rainbow979/replandiffuser
+  image: /images/diffusion.png
+  tags: [diffusion model, planning]
+  selected: true
+  excerpt: "When used for planning, diffusion models generate complete plans at once without incorporating new observations during the execution. Our algorithm determines when it is necessary to replan with new observations, and replans efficiently."
+
+- title: "Planning with Large Language Models for Code Generation"
+  authors: [Shun Zhang, Zhenfang Chen, Yikang Shen, Mingyu Ding, Joshua B. Tenenbaum, Chuang Gan]
+  venue: International Conference on Learning Representations (ICLR)
+  year: 2023
+  category: paper
+  paper: "https://arxiv.org/pdf/2303.05510.pdf"
+  slides: "/pdfs/Code_AI_ICLR.pdf"
+  website: "https://codeaimcts.github.io/"
+  code: "https://github.com/shunzh/Code-AI-Tree-Search"
+  image: /images/code-mcts.png
+  tags: [large language model, planning]
+  star: true
+  selected: true
+  excerpt: "Our algorithm combines Monte-Carlo tree search with the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline."
+
+- title: "Hyper-Decision Transformer for Efficient Online Policy Adaptation"
+  authors: [Mengdi Xu, Yuchen Lu, Yikang Shen, Shun Zhang, Ding Zhao, Chuang Gan]
+  venue: International Conference on Learning Representations (ICLR)
+  year: 2023
+  category: paper
+  paper: "https://arxiv.org/pdf/2304.08487.pdf"
+  image: /images/hyper-dt.png
+  tags: [large language model, reinforcement learning]
+  excerpt: "Using hypernets to efficiently adapt a Decision Transformer to new tasks with a handful of demonstrations."
+
+- title: "Prompting Decision Transformer for Few-shot Policy Generalization"
+  authors: [Mengdi Xu, Yikang Shen, Shun Zhang, Yuchen Lu, Ding Zhao, Joshua B. Tenenbaum, Chuang Gan]
+  venue: International Conference on Machine Learning (ICML)
+  year: 2022
+  category: paper
+  paper: "https://arxiv.org/pdf/2206.13499.pdf"
+  website: "https://mxu34.github.io/PromptDT/"
+  code: "https://github.com/mxu34/prompt-dt"
+  image: /images/prompt-dt.png
+  tags: [large language model, reinforcement learning]
+  selected: true
+  excerpt: "Using trajectory segments of different tasks as prompts for a Decision Transformer to achieve meta-offline reinforcement learning."
+
+- title: "Power Converter Circuit Design Automation using Parallel Monte Carlo Tree Search"
+  authors: [Shaoze Fan, Shun Zhang, Jianbo Liu, Ningyuan Cao, Xiaoxiao Guo, Jing Li, Xin Zhang]
+  venue: ACM Transactions on Design Automation of Electronic Systems (TODAES)
+  year: 2022
+  category: paper
+  paper: "https://dl.acm.org/doi/abs/10.1145/3549538"
+
+- title: "From Specification to Topology: Automatic Power Converter Design via Reinforcement Learning"
+  authors: [Shaoze Fan, Ningyuan Cao, Shun Zhang, Jing Li, Xiaoxiao Guo, Xin Zhang]
+  venue: International Conference on Computer Aided Design (ICCAD)
+  year: 2021
+  category: paper
+  paper: "/pdfs/fan-iccad-2021.pdf"
+  image: /images/iccad-2021.png
+  tags: [planning, AI for science]
+  excerpt: "Using Monte-Carlo tree search to automatically design electric circuits."
+
+- title: "Efficiently Finding Approximately-Optimal Queries for Improving Policies and Guaranteeing Safety"
+  authors: [Shun Zhang]
+  venue: Ph.D. Dissertation
+  year: 2020
+  category: paper
+  paper: "https://drive.google.com/file/d/1CFpapF2MPD02sX9rKfbtZcGiuHCm1ea5/view?usp=sharing"
+  slides: "https://drive.google.com/open?id=1QpnL0vLfObmgCXLCJnaB3lUllLCgnIDq"
+  image: /images/dissertation.png
+  selected: true
+  tags: [value alignment, planning under uncertainty]
+
+- title: "Querying to Find a Safe Policy Under Uncertain Safety Constraints in Markov Decision Processes"
+  authors: [Shun Zhang, Edmund H. Durfee, Satinder Singh]
+  venue: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2020
+  category: paper
+  paper: "/pdfs/shun-aaai-2020.pdf"
+  poster: "/pdfs/shun-aaai-2020-poster.pdf"
+  image: /images/aaai-2020.png
+  tags: [value alignment, planning under uncertainty]
+  selected: true
+  excerpt: "An agent is uncertain about which policies are safe. It either finds a safe policy to accomplish a task or proves that no safe policies exist using a minimum number of queries."
+
+- title: "Minimax-Regret Querying on Side Effects for Safe Optimality in Factored Markov Decision Processes"
+  authors: [Shun Zhang, Edmund H. Durfee, Satinder Singh]
+  venue: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2018
+  category: paper
+  paper: "/pdfs/shun-ijcai-2018.pdf"
+  slides: "/pdfs/shun-ijcai-2018-slides.pdf"
+  image: /images/ijcai-2018.png
+  tags: [value alignment, planning under uncertainty]
+  selected: true
+  excerpt: "A novel formulation and a query selection algorithm for the avoiding negative side effects problem in safe reinforcement learning."
+
+- title: "Modeling Sensory-Motor Decisions in Natural Behavior"
+  authors: [Ruohan Zhang, Shun Zhang, Matthew H. Tong, Yuchen Cui, Constatin A. Rothkopf, Dana H. Ballard, Mary M. Hayhoe]
+  venue: PLoS Computational Biology
+  year: 2018
+  category: paper
+  paper: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006518"
+  slides: "/pdfs/2017_VSS_MIRL.pdf"
+  image: /images/mirl.png
+  tags: [cognitive science, reinforcement learning]
+
+- title: "Approximately-Optimal Queries for Planning in Reward-Uncertain Markov Decision Processes"
+  authors: [Shun Zhang, Edmund H. Durfee, Satinder Singh]
+  venue: International Conference on Automated Planning and Scheduling (ICAPS)
+  year: 2017
+  category: paper
+  paper: "/pdfs/shun-icaps-2017.pdf"
+  slides: "/pdfs/shun-icaps-2017-slides.pdf"
+  image: /images/icaps-2017.png
+  tags: [value alignment, planning under uncertainty]
+  selected: true
+  excerpt: "A provably-optimal query selection algorithm to resolve reward uncertainty for better planning in reward-uncertain Markov decision processes."
+
+- title: "Determining Placements of Influencing Agents in a Flock"
+  authors: [Katie Genter, Shun Zhang, Peter Stone]
+  venue: Autonomous Agents and Multiagent Systems (AAMAS)
+  year: 2015
+  category: paper
+  paper: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.pdf"
+  slides: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.slides.pdf"
+  image: /images/flock.png
+  tags: [multi-agent system]
+
+- title: "Autonomous Intersection Management for Semi-Autonomous Vehicles"
+  authors: [Tsz-Chiu Au, Shun Zhang, Peter Stone]
+  venue: Handbook of Transportation
+  year: 2015
+  category: paper
+  paper: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/Routledge15-Au.pdf"
+  website: "https://www.cs.utexas.edu/~aim/"
+  image: /images/aim.png
+  selected: true
+  tags: [multi-agent system]

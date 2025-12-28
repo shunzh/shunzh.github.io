@@ -1,7 +1,7 @@
 {%- assign enable_links = include.enable_links | default: false -%}
 {%- assign authors = include.authors -%}
 {%- assign authorData = site.data.authors -%}
-
+<span class="authors">
 {%- for author in authors -%}
   {%- assign authorInfo = authorData | where: "name", author | first -%}
   {%- assign displayAuthor = author -%}
@@ -20,3 +20,4 @@
     , {{ displayAuthor }}
   {%- endif -%}
 {%- endfor -%}
+</span>

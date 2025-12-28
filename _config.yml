@@ -2,6 +2,10 @@
 # This file contains configuration flags to customize your site
 #
 
+# Site information
+name: "Shun Zhang"
+description: "Embodied AI + Reasoning @ NVIDIA"
+
 # Google Analytics 4 tracking ID
 google_analytics: G-0YD0Y04BWT
 
@@ -15,16 +19,8 @@ email: shunzh@umich.edu
 github_id: shunzh
 google_scholar_id: 0Fk7sSAAAAAJ
 linkedin_id: shun-zhang-1b154437
-twitter_id: shunzh_rl
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
+# Jekyll configuration
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
@@ -45,10 +41,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - command.txt
-  - todo.txt
-  - _temp/index.html
-  - _temp/
 
 collections:
   pages:
