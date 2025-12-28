@@ -9,7 +9,7 @@
     {%- assign displayAuthor = '<strong>' | append: displayAuthor | append: '</strong>' -%}
   {%- endif -%}
   {%- if enable_links and authorInfo and authorInfo.website -%}
-    {%- assign displayAuthor = '<a href="' | append: authorInfo.website | append: '">' | append: displayAuthor | append: '</a>' -%}
+    {%- assign displayAuthor = '<a href="' | append: authorInfo.website | append: '" target="_blank" rel="noopener noreferrer">' | append: displayAuthor | append: '</a>' -%}
   {%- endif -%}
 
   {%- if forloop.index == 1 -%}

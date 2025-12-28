@@ -20,7 +20,7 @@
 <body>
   <div class="container py-4 py-md-5 px-3 px-md-4" style="max-width: 900px;">
     <div class="text-center mb-4 mb-md-5 pb-3 pb-md-4 header-section">
-      <img src="{{ site.avatar }}" alt="Shun Zhang" class="rounded-circle mb-3 mb-md-4 profile-image">
+      <img src="{{ site.avatar }}" alt="{{ site.name }}" class="rounded-circle mb-3 mb-md-4 profile-image">
       <h1 class="display-6 display-md-5 fw-normal mb-2 heading-primary">{{ site.name }}</h1>
       <p class="lead mb-3 mb-md-4 text-subtitle">{{ site.description }}</p>
       <div class="d-flex justify-content-center flex-wrap gap-1 gap-md-2 small">
@@ -32,7 +32,7 @@
         <span class="text-muted">/</span>
         <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}">LinkedIn</a>
         <span class="text-muted">/</span>
-        <a href="{{ site.homepage_url }}/rethink">Rethink (Blog)</a>
+        <a href="{{ site.homepage_url }}/rethink">ReThink (Blog)</a>
       </div>
     </div>
 
@@ -116,6 +116,7 @@
         {% endif %}
       </div>
       {% endfor %}
+      </div>
       
       <div class="text-center mt-4 mt-md-5 pt-3 pt-md-4 footer-section">
         <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" target="_blank" rel="noopener noreferrer" class="small">
