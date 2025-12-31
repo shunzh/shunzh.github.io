@@ -77,10 +77,7 @@
       <h2 class="h5 fw-normal mb-3 mb-md-4 pb-2 section-header">SELECTED PUBLICATIONS</h2>
       
       {% assign selected_pubs = site.data.publications | where: "selected", true %}
-      {% if selected_pubs.size == 0 %}
-        {% assign selected_pubs = site.data.publications | sort: "year" | reverse | limit: 5 %}
-      {% endif %}
-      
+
       {% for pub in selected_pubs %}
       <div class="mb-3 mb-md-4 pb-3 pb-md-4 publication-item{% if forloop.last %} publication-item-last{% endif %}">
         <h3 class="h6 fw-bold mb-2 publication-title">
@@ -113,14 +110,23 @@
         </div>
         {% endif %}
       </div>
-      {% endfor %}
-      </div>
+        {% endfor %}
       
-      <div class="text-center mt-4 mt-md-5 pt-3 pt-md-4 footer-section">
+      <div class="mt-3 mt-md-4">
         <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" target="_blank" rel="noopener noreferrer" class="small">
           View complete publication list on Google Scholar →
         </a>
       </div>
+    </div>
+
+    <div class="mb-4 mb-md-5">
+      <h2 class="h5 fw-normal mb-3 mb-md-4 pb-2 section-header">ACADEMIC SERVICE</h2>
+      
+      {% for service in site.data.academic_services %}
+      <div class="small mb-3 mb-md-4">
+        {{ service.category }}: {{ service.content }}
+      </div>
+      {% endfor %}
     </div>
   </div>
   
