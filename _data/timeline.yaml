@@ -4,7 +4,7 @@
   location: Santa Clara, CA
   start_date: Aug 2025
   end_date: Present
-  description: Post-training of vision language models.
+  description: Post-training of vision language models for physical AI reasoning.
 
 - type: experience
   title: Founding Member of Technical Staff
@@ -12,21 +12,39 @@
   location: San Francisco, CA
   start_date: Jun 2024
   end_date: Jan 2025
-  description: Developed an AI agent that plans, verifies, and discovers new skills and knowledge.
+  description: Developed a **code agent** that plans, verifies, and discovers new skills and knowledge.
 
 - type: experience
   title: Research Scientist
   organization: MIT-IBM Watson AI Lab
   start_date: Jun 2022
   end_date: Jun 2024
-  description: Research on reinforcement learning and post-training of language models, with a focus on code generation and reinforcement learning from human feedback.
+  description: Research on **reinforcement learning** and post-training of **language models**, with a focus on code generation and reinforcement learning from human feedback.
 
 - type: experience
   title: Postdoctoral Researcher
   organization: IBM Research
   start_date: Aug 2020
   end_date: Jun 2022
-  description: Research on meta-reinforcement learning and AI for scientific discovery.
+  description: Research on **meta-reinforcement learning** and **AI for scientific discovery**.
+
+- type: experience
+  title: Software Development Engineer Intern
+  organization: Amazon
+  location: Seattle, WA
+  start_date: Jun 2014
+  end_date: Aug 2014
+  description: Created a WebRTC-related internal tool to resolve cross-departmental communication issues.
+  hide: true
+
+- type: experience
+  title: Software Development Engineer Intern
+  organization: Semantic Designs
+  location: Austin, TX
+  start_date: Jun 2013
+  end_date: Aug 2013
+  description: Created a user interface for a programming language analysis tool for better visualization.
+  hide: true
 
 - type: education
   title: Ph.D. in Computer Science and Engineering

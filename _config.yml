@@ -19,6 +19,9 @@ email: shunzh@umich.edu
 github_id: shunzh
 google_scholar_id: 0Fk7sSAAAAAJ
 linkedin_id: shun-zhang-1b154437
+cv_pdf_path: "/pdfs/shun-zhang-cv.pdf"
+
+research_interests: "Reinforcement learning; large language models; code generation and reasoning; value alignment; artificial general intelligence."
 
 # Jekyll configuration
 kramdown:

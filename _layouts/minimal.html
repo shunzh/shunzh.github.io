@@ -30,6 +30,8 @@
         <span class="text-muted">/</span>
         <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}">LinkedIn</a>
         <span class="text-muted">/</span>
+        <a href="{{ site.homepage_url }}{{ site.cv_pdf_path }}">CV</a>
+        <span class="text-muted">/</span>
         <a href="{{ site.homepage_url }}/rethink">ReThink (Blog)</a>
       </div>
     </div>
@@ -46,6 +48,7 @@
       
       <div class="timeline">
         {% for item in site.data.timeline %}
+        {% unless item.hide %}
         <div class="timeline-item position-relative mb-3 mb-md-4">
           <div class="timeline-marker"></div>
           <div class="timeline-content ms-3 ms-md-4">
@@ -69,6 +72,7 @@
             {% endif %}
           </div>
         </div>
+        {% endunless %}
         {% endfor %}
       </div>
     </div>
