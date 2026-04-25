@@ -1,7 +1,7 @@
 ---
 ---
 
-@use "variables";
+@import "variables";
 
 body {
     color: #000000;
@@ -68,15 +68,15 @@ h1 + ul + p {
     margin: 0.6em 0;
 }
 a {
-    color: variables.$text-secondary;
+    color: $text-secondary;
     text-decoration: none;
-    border-bottom: 1px dotted variables.$text-muted;
+    border-bottom: 1px dotted $text-muted;
     transition: color 0.2s ease, border-bottom-color 0.2s ease, border-bottom-style 0.2s ease;
 }
 a:focus,
 a:hover {
-    color: variables.$blue-muted;
-    border-bottom-color: variables.$blue-muted;
+    color: $blue-muted;
+    border-bottom-color: $blue-muted;
     border-bottom-style: solid;
 }
 #resume + .attribution {

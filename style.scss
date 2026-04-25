@@ -1,17 +1,17 @@
 ---
 ---
 
-@use "variables";
+@import "variables";
 
 // Modern minimal design with muted grey colors and subtle blue accents
 :root {
-  --text-primary: #{variables.$text-primary};
-  --text-secondary: #{variables.$text-secondary};
-  --text-muted: #{variables.$text-muted};
-  --text-light: #{variables.$text-light};
-  --border: #{variables.$border};
-  --border-light: #{variables.$border-light};
-  --blue-muted: #{variables.$blue-muted};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-muted: #{$text-muted};
+  --text-light: #{$text-light};
+  --border: #{$border};
+  --border-light: #{$border-light};
+  --blue-muted: #{$blue-muted};
 }
 
 body {
