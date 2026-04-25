@@ -1,6 +1,8 @@
 ---
 ---
 
+@use "variables";
+
 body {
     color: #000000;
     background: #EEEEEE;
@@ -65,17 +67,16 @@ ul {
 h1 + ul + p {
     margin: 0.6em 0;
 }
-/* Consistent with style.scss */
 a {
-    color: #374151;
+    color: variables.$text-secondary;
     text-decoration: none;
-    border-bottom: 1px dotted #6b7280;
+    border-bottom: 1px dotted variables.$text-muted;
     transition: color 0.2s ease, border-bottom-color 0.2s ease, border-bottom-style 0.2s ease;
 }
 a:focus,
 a:hover {
-    color: #6b8db8;
-    border-bottom-color: #6b8db8;
+    color: variables.$blue-muted;
+    border-bottom-color: variables.$blue-muted;
     border-bottom-style: solid;
 }
 #resume + .attribution {
