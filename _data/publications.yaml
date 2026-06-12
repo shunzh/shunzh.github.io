@@ -1,3 +1,13 @@
+- title: "Cosmos 3: Omnimodal World Models for Physical AI"
+  authors: [NVIDIA]
+  venue: arXiv
+  year: 2026
+  category: preprint
+  paper: https://arxiv.org/pdf/2606.02800.pdf
+  website: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
+  code: https://github.com/nvidia/cosmos
+  selected: true
+
 - title: "Improving Reinforcement Learning from Human Feedback with Efficient Reward Model Ensemble"
   authors: [Shun Zhang, Zhenfang Chen, Sunli Chen, Yikang Shen, Zhiqing Sun, Chuang Gan]
   venue: arXiv
