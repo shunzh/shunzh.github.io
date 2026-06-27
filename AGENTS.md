@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 This file provides guidance to coding agents when working with code in this repository.
 
@@ -15,11 +15,29 @@ jekyll serve
 # Build the site
 jekyll build
 
-# Generate CV PDF (requires jekyll serve to be running)
+# Generate CV PDF from the locally served CV page (requires pagedjs-cli)
 bash generate_cv_pdf.sh
 ```
 
 The site builds to `_site/`. There is no test suite.
+
+## CV PDF Generation
+
+The PDF CV is committed at `pdfs/shun-zhang-cv.pdf` and is generated from the live Jekyll CV page. Use one source of truth for local generation:
+
+1. Start the site locally and keep it running:
+
+   ```bash
+   jekyll serve
+   ```
+
+2. In another shell, generate the PDF:
+
+   ```bash
+   bash generate_cv_pdf.sh
+   ```
+
+`generate_cv_pdf.sh` calls `pagedjs-cli --allowedDomain localhost http://localhost:4000/cv/ -o pdfs/shun-zhang-cv.pdf`, so it requires `pagedjs-cli` and the local server at port `4000`. Review the generated PDF before committing it.
 
 ## Architecture
 

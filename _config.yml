@@ -15,7 +15,7 @@ homepage_url: "https://shunzh.github.io" # the location where you host your pers
 avatar: images/shun_profile.png
 location: San Francisco Bay Area
 
-email: shunzh@umich.edu
+email: shun.zhang.rl@gmail.com
 github_id: shunzh
 google_scholar_id: 0Fk7sSAAAAAJ
 linkedin_id: shun-zhang-1b154437
@@ -39,11 +39,13 @@ sass:
 
 # Exclude these files from your production _site
 exclude:
+  - AGENTS.md
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+  - generate_cv_pdf.sh
 
 collections:
   pages:
