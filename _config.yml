@@ -4,7 +4,7 @@
 
 # Site information
 name: "Shun Zhang"
-description: "Embodied AI + Reasoning @ NVIDIA"
+description: "Embodied AI + Reasoning"
 
 # Google Analytics 4 tracking ID
 google_analytics: G-0YD0Y04BWT
@@ -21,7 +21,7 @@ google_scholar_id: 0Fk7sSAAAAAJ
 linkedin_id: shun-zhang-1b154437
 cv_pdf_path: "/pdfs/shun-zhang-cv.pdf"
 
-research_interests: "Reinforcement learning; large language models; code generation and reasoning; value alignment; artificial general intelligence."
+research_interests: "Reinforcement learning; foundation models; code generation and reasoning; value alignment; artificial general intelligence."
 
 # Jekyll configuration
 kramdown:

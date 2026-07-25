@@ -3,7 +3,7 @@
 
 @import "variables";
 
-// Modern minimal design with muted grey colors and subtle blue accents
+// Minimal neutral theme with one restrained blue accent.
 :root {
   --text-primary: #{$text-primary};
   --text-secondary: #{$text-secondary};
@@ -37,7 +37,7 @@ a:hover {
 
 // Small/muted links for publications
 .link-small {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-size: 0.875rem;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 
 .timeline-date,
 .timeline-location {
-  color: var(--text-light);
+  color: var(--text-muted);
 }
 
 .timeline-title {
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .text-venue {
-  color: var(--text-light);
+  color: var(--text-muted);
 }
 
 .publication-excerpt {
