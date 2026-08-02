@@ -1,0 +1,44 @@
+\documentclass[10pt,letterpaper,roman]{moderncv}
+
+\moderncvcolor{black}
+\moderncvstyle{classic}
+
+\usepackage[scale=0.82]{geometry}
+\usepackage[semibold]{sourceserifpro}
+\usepackage{microtype}
+
+\setlength{\hintscolumnwidth}{1.25in}
+
+\name{<%= h first_name %>}{\hspace{0.12em}<%= h last_name %>}
+\email{<%= h config["email"] %>}
+\homepage{<%= h homepage_label %>}
+\address{<%= h config["location"] %>}{}{}
+
+\begin{document}
+\makecvtitle
+
+<% if present?(config["research_interests"]) -%>
+\cvitem{Interests}{<%= inline_latex(config["research_interests"]) %>}
+<% end -%>
+
+\section{Experience}
+<% experiences.each do |item| -%>
+\cventry{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
+<% end -%>
+
+\section{Education}
+<% education.each do |item| -%>
+\cventry{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
+<% end -%>
+
+\section{Publications and Preprints}
+<% publications.each do |pub| -%>
+\cvitem{<%= inline_latex pub["year"].to_s %>}{\textbf{<%= inline_latex pub["title"] %>}\newline{}<%= authors_latex pub["authors"] %>\newline{}\emph{<%= inline_latex pub["venue"] %>}}
+<% end -%>
+
+\section{Academic Services}
+<% services.each do |service| -%>
+\cvitem{<%= inline_latex service["category"] %>}{<%= inline_latex service["content"] %>}
+<% end -%>
+
+\end{document}

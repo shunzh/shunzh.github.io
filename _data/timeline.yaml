@@ -4,7 +4,8 @@
   location: Santa Clara, CA
   start_date: Aug 2025
   end_date: Present
-  description: Training and evaluating vision-language models (VLMs) and world action models (WAMs) for **physical AI**.
+  description:
+    - Training and evaluating vision-language models (VLMs) and world action models (WAMs) for **physical AI**.
 
 - type: experience
   title: Founding Member of Technical Staff
@@ -12,21 +13,24 @@
   location: San Francisco, CA
   start_date: Jun 2024
   end_date: Jan 2025
-  description: Developed a **code agent** that plans, verifies, and discovers new skills and knowledge.
+  description:
+    - Developed a **code agent** that plans, verifies, and discovers new skills and knowledge.
 
 - type: experience
   title: Research Scientist
   organization: MIT-IBM Watson AI Lab
   start_date: Jun 2022
   end_date: Jun 2024
-  description: Research on **reinforcement learning** and post-training of **language models**, with a focus on code generation and reinforcement learning from human feedback.
+  description:
+    - Research on **reinforcement learning** and post-training of **language models**, with a focus on code generation and reinforcement learning from human feedback.
 
 - type: experience
   title: Postdoctoral Researcher
   organization: IBM Research
   start_date: Aug 2020
   end_date: Jun 2022
-  description: Research on **meta-reinforcement learning** and **AI for scientific discovery**.
+  description:
+    - Research on **meta-reinforcement learning** and **AI for scientific discovery**.
 
 - type: experience
   title: Software Development Engineer Intern
@@ -34,7 +38,8 @@
   location: Seattle, WA
   start_date: Jun 2014
   end_date: Aug 2014
-  description: Created a WebRTC-related internal tool to resolve cross-departmental communication issues.
+  description:
+    - Created a WebRTC-related internal tool to resolve cross-departmental communication issues.
   hide: true
 
 - type: experience
@@ -43,7 +48,8 @@
   location: Austin, TX
   start_date: Jun 2013
   end_date: Aug 2013
-  description: Created a user interface for a programming language analysis tool for better visualization.
+  description:
+    - Created a user interface for a programming language analysis tool for better visualization.
   hide: true
 
 - type: education
@@ -52,12 +58,14 @@
   location: Ann Arbor, MI
   start_date: Sep 2015
   end_date: Apr 2020
-  advisors: "Advisors: [Prof. Satinder Singh](https://web.eecs.umich.edu/~baveja/) and [Prof. Ed Durfee](https://durfee.engin.umich.edu/)."
-  description: "Research on value alignment and AI safety in reinforcement learning."
+  description:
+    - "Advisors: [Prof. Satinder Singh](https://web.eecs.umich.edu/~baveja/) and [Prof. Ed Durfee](https://durfee.engin.umich.edu/)."
+    - Research on value alignment and AI safety in reinforcement learning.
 
 - type: education
   title: B.S. and M.S. in Computer Science
   organization: University of Texas at Austin
   location: Austin, TX
   end_date: Aug 2015
-  advisors: "Undergraduate/master research advisors: [Prof. Peter Stone](https://www.cs.utexas.edu/~pstone/) and [Prof. Dana Ballard](https://www.cs.utexas.edu/~dana/)."
+  description:
+    - "Undergraduate/master research advisors: [Prof. Peter Stone](https://www.cs.utexas.edu/~pstone/) and [Prof. Dana Ballard](https://www.cs.utexas.edu/~dana/)."

@@ -15,7 +15,7 @@ jekyll serve
 # Build the site
 jekyll build
 
-# Generate CV PDF from the locally served CV page (requires pagedjs-cli)
+# Generate CV PDF from YAML data through LaTeX
 bash generate_cv_pdf.sh
 ```
 
@@ -23,21 +23,13 @@ The site builds to `_site/`. There is no test suite.
 
 ## CV PDF Generation
 
-The PDF CV is committed at `pdfs/shun-zhang-cv.pdf` and is generated from the live Jekyll CV page. Use one source of truth for local generation:
+The PDF CV is committed at `pdfs/shun-zhang-cv.pdf` and is generated from the shared YAML data files through LaTeX. Use one source of truth for local generation:
 
-1. Start the site locally and keep it running:
+```bash
+bash generate_cv_pdf.sh
+```
 
-   ```bash
-   jekyll serve
-   ```
-
-2. In another shell, generate the PDF:
-
-   ```bash
-   bash generate_cv_pdf.sh
-   ```
-
-`generate_cv_pdf.sh` calls `pagedjs-cli --allowedDomain localhost http://localhost:4000/cv/ -o pdfs/shun-zhang-cv.pdf`, so it requires `pagedjs-cli` and the local server at port `4000`. Review the generated PDF before committing it.
+`generate_cv_pdf.sh` calls `ruby generate_cv_tex.rb` to render `tmp/cv/shun-zhang-cv.tex`, compiles it with `latexmk -xelatex`, and copies the result to `pdfs/shun-zhang-cv.pdf`. Review the generated PDF before committing it.
 
 ## Architecture
 
@@ -46,21 +38,19 @@ Content is driven entirely by YAML data files and Markdown pages — no JavaScri
 **Data files (`_data/`)** are the primary place to add/edit content:
 - `publications.yaml` — publication list; set `selected: true` to show on homepage; fields include `title`, `authors` (list of strings matching names in `authors.yaml`), `venue`, `year`, `paper`, `slides`, `poster`, `website`, `code`, `image`, `excerpt`, `category` (`paper` or `preprint`)
 - `authors.yaml` — author metadata; `is_me: true` bolds the name; `website` enables hyperlinks when `enable_links=true`
-- `timeline.yaml` — career/education entries; `type: experience` or `type: education`; `hide: true` suppresses an entry
+- `timeline.yaml` — career/education entries; `type: experience` or `type: education`; `description` is a list of Markdown strings; `hide: true` suppresses an entry
 - `academic_services.yaml` — reviewer/service entries
 
 **Layouts (`_layouts/`):**
 - `minimal.html` — main homepage layout; renders profile header, about blurb, career timeline, and selected publications; uses Bootstrap 5.3 via CDN
-- `cv.html` — printable CV layout; pulls from the same data files and still renders academic service; uses `cv.css`
+- `cv.tex.erb` — moderncv LaTeX template used by `generate_cv_tex.rb` to render the PDF CV
 
 **Pages (`_pages/`):**
 - `index.md` — uses `minimal` layout
 - `about.md` — short homepage bio content, loaded by `minimal.html` via `site.pages`
-- `cv.md` — uses `cv` layout
 
 **Stylesheets:**
 - `style.scss` — homepage styles (compiled to `style.css`)
-- `cv.scss` — CV print styles (compiled to `cv.css`)
 - `_sass/_variables.scss` — shared color variables imported by both stylesheets
 
 **Includes (`_includes/`):**
@@ -75,4 +65,4 @@ Content is driven entirely by YAML data files and Markdown pages — no JavaScri
 - PDF files go in `pdfs/`, images go in `images/`. Both are served from the root path (e.g., `/pdfs/foo.pdf`).
 - `images/shun_profile.png` is the homepage avatar referenced by `_config.yml`.
 - To hide a timeline entry without deleting it, set `hide: true`.
-- The CV page at `/cv` is separate from the PDF CV at `cv_pdf_path` in `_config.yml`.
+- The homepage CV link points to the committed PDF at `cv_pdf_path` in `_config.yml`.

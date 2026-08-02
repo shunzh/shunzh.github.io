@@ -60,15 +60,12 @@
               <p class="small mb-0 timeline-location">{{ item.location }}</p>
               {% endif %}
             </div>
-            {% if item.advisors %}
-            <div class="small mt-2 timeline-description">
-              {{ item.advisors | markdownify }}
-            </div>
-            {% endif %}
             {% if item.description %}
+            {% for description in item.description %}
             <div class="small mt-2 timeline-description">
-              {{ item.description | markdownify }}
+              {{ description | markdownify }}
             </div>
+            {% endfor %}
             {% endif %}
           </div>
         </div>
