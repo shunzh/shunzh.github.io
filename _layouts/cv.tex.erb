@@ -23,12 +23,12 @@
 
 \section{Experience}
 <% experiences.each do |item| -%>
-\cventry{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
+\cventry[0.45em]{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
 <% end -%>
 
 \section{Education}
 <% education.each do |item| -%>
-\cventry{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
+\cventry[0.45em]{<%= date_range_latex(item) %>}{<%= inline_latex item["title"] %>}{<%= inline_latex item["organization"] %>}{<%= inline_latex item["location"] %>}{}{<%= description_latex(item["description"]) %>}
 <% end -%>
 
 \section{Publications and Preprints}
