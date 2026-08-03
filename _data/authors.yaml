@@ -5,7 +5,7 @@
 - name: Satinder Singh
   website: https://web.eecs.umich.edu/~baveja/
 - name: Edmund H. Durfee
-  website: https://durfee.engin.umich.edu/
+  website: https://durfee.engin.umich.edu/a-brief-biography/
 - name: Peter Stone
   website: https://www.cs.utexas.edu/~pstone/
 - name: Dana H. Ballard
@@ -25,13 +25,13 @@
 - name: Katie Genter
   website: https://www.linkedin.com/in/katie-genter-b47715ba/
 - name: Matthew H. Tong
-  website: https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Matt.Tong
+  website: https://research.ibm.com/people/matt-tong
 
 # my collaborators at IBM
 - name: Sunli Chen
   website: https://eeeeeerickkk.github.io/
 - name: Zhiqing Sun
-  website: https://www.cs.cmu.edu/~zhiqings/
+  website: https://edward-sun.github.io/
 - name: Siyuan Zhou
   website: https://rainbow979.github.io/
 - name: Yilun Du
@@ -45,7 +45,7 @@
 - name: Mingyu Ding
   website: https://dingmyu.github.io/
 - name: Joshua B. Tenenbaum
-  website: https://web.mit.edu/cocosci/josh.html
+  website: https://cocosci.mit.edu/josh-tenenbaum/
 - name: Chuang Gan
   website: https://people.csail.mit.edu/ganchuang/
 - name: Yuchen Lu

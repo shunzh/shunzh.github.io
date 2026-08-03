@@ -8,8 +8,9 @@
 \usepackage{microtype}
 
 \setlength{\hintscolumnwidth}{1.25in}
+\renewcommand*{\lastnamestyle}[1]{{\namefont\hspace{0.08em}\textcolor{lastnamecolor}{#1}}}
 
-\name{<%= h first_name %>}{\hspace{0.12em}<%= h last_name %>}
+\name{<%= h first_name %>}{<%= h last_name %>}
 \email{<%= h config["email"] %>}
 \homepage{<%= h homepage_label %>}
 \address{<%= h config["location"] %>}{}{}
