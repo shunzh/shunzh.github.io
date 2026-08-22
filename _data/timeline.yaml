@@ -5,7 +5,8 @@
   start_date: Aug 2025
   end_date: Present
   description:
-    - Training and evaluating vision-language models (VLMs) and world action models (WAMs) for **physical AI**.
+    - Training and evaluating **vision-language models (VLMs)** and **world action models (WAMs)**.
+    - Developing inference-time scaling methods for WAMs and building Isaac Sim-based evaluation environments.
 
 - type: experience
   title: Founding Member of Technical Staff
@@ -22,7 +23,7 @@
   start_date: Jun 2022
   end_date: Jun 2024
   description:
-    - Research on **reinforcement learning** and post-training of **language models**, with a focus on code generation and reinforcement learning from human feedback.
+    - Research on **reinforcement learning** and post-training of **language models**, with a focus on code generation and reinforcement learning from human feedback (RLHF).
 
 - type: experience
   title: Postdoctoral Researcher

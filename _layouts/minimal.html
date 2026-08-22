@@ -31,8 +31,6 @@
         <a href="https://www.linkedin.com/in/{{ site.linkedin_id }}">LinkedIn</a>
         <span class="text-muted">/</span>
         <a href="{{ site.homepage_url }}{{ site.cv_pdf_path }}">CV</a>
-        <span class="text-muted">/</span>
-        <a href="{{ site.homepage_url }}/rethink">ReThink (Blog)</a>
       </div>
     </div>
 
@@ -61,11 +59,11 @@
               {% endif %}
             </div>
             {% if item.description %}
-            {% for description in item.description %}
             <div class="small mt-2 timeline-description">
-              {{ description | markdownify }}
-            </div>
+            {% for description in item.description %}
+              <div class="timeline-description-item">{{ description | markdownify | remove: '<p>' | remove: '</p>' }}</div>
             {% endfor %}
+            </div>
             {% endif %}
           </div>
         </div>

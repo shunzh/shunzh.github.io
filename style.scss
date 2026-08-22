@@ -110,8 +110,17 @@ a:hover {
 
 .timeline-description {
   line-height: 1.6;
+}
+
+.timeline-description-item {
+  margin-bottom: 0.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   strong {
-    font-weight: normal;
+    font-weight: 600;
   }
 }
 

@@ -64,10 +64,13 @@ def authors_latex(authors)
 end
 
 def description_latex(description)
-  Array(description)
+  items = Array(description)
     .select { |value| present?(value) }
     .map { |value| inline_latex(value) }
-    .join("\\newline{}")
+
+  return "" if items.empty?
+
+  "\\begin{itemize}[label=--, itemsep=0.1em, topsep=0pt, parsep=0pt, partopsep=0pt]#{items.map { |item| "\\item #{item}" }.join} \\end{itemize}"
 end
 
 config = load_yaml(File.join(ROOT, "_config.yml"))
