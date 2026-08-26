@@ -1,10 +1,9 @@
-\documentclass[10pt,letterpaper,roman]{moderncv}
+\documentclass[10pt,letterpaper,sans]{moderncv}
 
 \moderncvcolor{black}
 \moderncvstyle{classic}
 
 \usepackage[scale=0.82]{geometry}
-\usepackage[semibold]{sourceserifpro}
 \usepackage{enumitem}
 \usepackage{microtype}
 
@@ -20,7 +19,7 @@
 \makecvtitle
 
 <% if present?(config["research_interests"]) -%>
-\cvitem{Interests}{<%= inline_latex(config["research_interests"]) %>}
+\cvitem{Research Interests}{<%= inline_latex(config["research_interests"]) %>}
 <% end -%>
 
 \section{Experience}
@@ -35,7 +34,7 @@
 
 \section{Publications and Preprints}
 <% publications.each do |pub| -%>
-\cvitem{<%= inline_latex pub["year"].to_s %>}{\textbf{<%= inline_latex pub["title"] %>}\newline{}<%= authors_latex pub["authors"] %>\newline{}\emph{<%= inline_latex pub["venue"] %>}}
+\cvitem{<%= inline_latex pub["year"].to_s %>}{\textbf{<%= inline_latex pub["title"] %>}\newline{}<%= authors_latex pub["authors"] %>\newline{}\emph{<%= inline_latex pub["venue"] %>}<%= paper_link_latex(pub, config) %>}
 <% end -%>
 
 \section{Academic Services}

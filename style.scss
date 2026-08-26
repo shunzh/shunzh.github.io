@@ -5,6 +5,8 @@
 
 // Minimal neutral theme with one restrained blue accent.
 :root {
+  color-scheme: light dark;
+  --background: #fff;
   --text-primary: #{$text-primary};
   --text-secondary: #{$text-secondary};
   --text-muted: #{$text-muted};
@@ -12,6 +14,15 @@
   --border: #{$border};
   --border-light: #{$border-light};
   --blue-muted: #{$blue-muted};
+  --profile-border: var(--border);
+  --marker-border: #fff;
+  --selection-background: #dbeafe;
+  --selection-text: #111827;
+}
+
+html,
+body {
+  background: var(--background);
 }
 
 body {
@@ -19,6 +30,11 @@ body {
   color: var(--text-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--selection-background);
+  color: var(--selection-text);
 }
 
 // Global link styling
@@ -74,7 +90,7 @@ a:hover {
   height: 0.75rem;
   border-radius: 50%;
   background: var(--blue-muted);
-  border: 2px solid #fff;
+  border: 2px solid var(--marker-border);
   box-shadow: 0 0 0 1px var(--border);
   z-index: 1;
 }
@@ -143,7 +159,7 @@ a:hover {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border: 2px solid var(--border);
+  border: 2px solid var(--profile-border);
 }
 
 .heading-primary {
@@ -185,6 +201,27 @@ a:hover {
 .publication-excerpt {
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101214;
+    --text-primary: #f2f4f5;
+    --text-secondary: #d4d8dc;
+    --text-muted: #a1a9b2;
+    --text-light: #7f8892;
+    --border: #343a40;
+    --border-light: #252a2f;
+    --blue-muted: #9bb4d0;
+    --profile-border: #3d454d;
+    --marker-border: var(--background);
+    --selection-background: #294866;
+    --selection-text: #f2f4f5;
+  }
 }
 
 // Responsive - Mobile optimizations

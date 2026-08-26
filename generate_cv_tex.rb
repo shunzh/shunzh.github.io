@@ -63,6 +63,30 @@ def authors_latex(authors)
   end.join(", ")
 end
 
+def latex_url(url)
+  url.to_s
+     .gsub("\\", "%5C")
+     .gsub("{", "%7B")
+     .gsub("}", "%7D")
+     .gsub(" ", "%20")
+     .gsub("%", "\\%")
+     .gsub("#", "\\#")
+     .gsub("&", "\\&")
+end
+
+def absolute_url(path_or_url, config)
+  value = path_or_url.to_s.strip
+  return value if value.match?(%r{\Ahttps?://})
+
+  "#{config["homepage_url"].sub(%r{/\z}, "")}/#{value.sub(%r{\A/}, "")}"
+end
+
+def paper_link_latex(pub, config)
+  return "" unless present?(pub["paper"])
+
+  "\\hspace{0.5em}\\href{#{latex_url(absolute_url(pub["paper"], config))}}{\\faIcon[regular]{file-pdf}}"
+end
+
 def description_latex(description)
   items = Array(description)
     .select { |value| present?(value) }
@@ -70,7 +94,7 @@ def description_latex(description)
 
   return "" if items.empty?
 
-  "\\begin{itemize}[label=--, itemsep=0.1em, topsep=0pt, parsep=0pt, partopsep=0pt]#{items.map { |item| "\\item #{item}" }.join} \\end{itemize}"
+  items.join("\\newline{}")
 end
 
 config = load_yaml(File.join(ROOT, "_config.yml"))
