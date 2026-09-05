@@ -6,6 +6,7 @@
   paper: https://arxiv.org/pdf/2606.02800.pdf
   website: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
   code: https://github.com/nvidia/cosmos
+  tags: [world model, embodied AI]
   selected: true
 
 - title: "Improving Reinforcement Learning from Human Feedback with Efficient Reward Model Ensemble"
@@ -16,7 +17,7 @@
   paper: https://arxiv.org/pdf/2401.16635.pdf
   code: https://github.com/shunzh/alpaca-farm-ensemble-reward
   image: images/reward-ensemble.png
-  tags: [large language model, value alignment]
+  tags: [language model, value alignment]
   selected: true
   excerpt: "We introduce efficient reward model ensemble approaches for reinforcement learning from human feedback (RLHF), achieving better alignment with human values under computational constraints."
 
@@ -49,7 +50,7 @@
   website: "https://codeaimcts.github.io/"
   code: "https://github.com/shunzh/Code-AI-Tree-Search"
   image: /images/code-mcts.png
-  tags: [large language model, planning]
+  tags: [language model, planning]
   star: true
   selected: true
   excerpt: "Our algorithm combines Monte-Carlo tree search with the Transformer beam search algorithm for code generation. It's more sample-efficient than a well-accepted sampling + filtering baseline."
@@ -61,7 +62,7 @@
   category: paper
   paper: "https://arxiv.org/pdf/2304.08487.pdf"
   image: /images/hyper-dt.png
-  tags: [large language model, reinforcement learning]
+  tags: [language model, reinforcement learning]
   excerpt: "Using hypernets to efficiently adapt a Decision Transformer to new tasks with a handful of demonstrations."
 
 - title: "Prompting Decision Transformer for Few-shot Policy Generalization"
@@ -73,7 +74,7 @@
   website: "https://mxu34.github.io/PromptDT/"
   code: "https://github.com/mxu34/prompt-dt"
   image: /images/prompt-dt.png
-  tags: [large language model, reinforcement learning]
+  tags: [language model, reinforcement learning]
   selected: true
   excerpt: "Using trajectory segments of different tasks as prompts for a Decision Transformer to achieve meta-offline reinforcement learning."
 
@@ -159,7 +160,7 @@
   paper: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.pdf"
   slides: "https://www.cs.utexas.edu/~pstone/Papers/bib2html-links/AAMAS15-katie-flocking.slides.pdf"
   image: /images/flock.png
-  tags: [multi-agent system]
+  tags: [multi-agent systems]
 
 - title: "Autonomous Intersection Management for Semi-Autonomous Vehicles"
   authors: [Tsz-Chiu Au, Shun Zhang, Peter Stone]
@@ -170,4 +171,4 @@
   website: "https://www.cs.utexas.edu/~aim/"
   image: /images/aim.png
   selected: true
-  tags: [multi-agent system]
+  tags: [multi-agent systems]

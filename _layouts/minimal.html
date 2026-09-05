@@ -108,6 +108,13 @@
           {{ pub.excerpt }}
         </div>
         {% endif %}
+        {% if pub.tags %}
+        <div class="d-flex flex-wrap gap-1 mt-2">
+          {% for tag in pub.tags %}
+          <span class="publication-tag"># {{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
         {% endfor %}
       

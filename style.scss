@@ -203,6 +203,13 @@ a:hover {
   line-height: 1.6;
 }
 
+.publication-tag {
+  padding: 0.1rem 0.4rem;
+  background: var(--border-light);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
 .text-muted {
   color: var(--text-muted) !important;
 }
