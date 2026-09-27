@@ -5,7 +5,7 @@
   start_date: Aug 2025
   end_date: Present
   description:
-    - Developing simulation-based benchmarks for **world-action models (WAMs)**.
+    - Developing simulation-based benchmarks for robot **policy models**.
     - Post-training and evaluating **vision-language models (VLMs)** for embodied AI capabilities.
 
 - type: experience

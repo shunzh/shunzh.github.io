@@ -79,6 +79,12 @@
 
       {% for pub in selected_pubs %}
       <div class="mb-3 mb-md-4 pb-3 pb-md-4 publication-item{% if forloop.last %} publication-item-last{% endif %}">
+        <div class="publication-thumbnail">
+          {% if pub.image %}
+          <img src="{{ pub.image | relative_url }}" alt="Figure for {{ pub.title | escape }}" loading="lazy" decoding="async">
+          {% endif %}
+        </div>
+        <div class="publication-details">
         <h3 class="h6 fw-bold mb-2 publication-title">
           {{ pub.title }}
         </h3>
@@ -108,13 +114,7 @@
           {{ pub.excerpt }}
         </div>
         {% endif %}
-        {% if pub.tags %}
-        <div class="d-flex flex-wrap gap-1 mt-2">
-          {% for tag in pub.tags %}
-          <span class="publication-tag"># {{ tag }}</span>
-          {% endfor %}
         </div>
-        {% endif %}
       </div>
         {% endfor %}
       

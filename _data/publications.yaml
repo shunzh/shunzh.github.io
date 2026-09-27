@@ -6,6 +6,7 @@
   paper: https://arxiv.org/pdf/2606.02800.pdf
   website: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
   code: https://github.com/nvidia/cosmos
+  image: /images/cosmos3.png
   tags: [world model, embodied AI]
   selected: true
 
